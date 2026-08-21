@@ -646,14 +646,19 @@ input:focus-visible {
 }
 
 .legal__body ul {
-  list-style: disc;
-  padding-left: 1.4em;
+  list-style: none;
+  padding-left: 0;
   margin-bottom: 1em;
 }
 
 .legal__body li {
   color: var(--text-muted);
   margin-bottom: 0.4em;
+  padding-left: 0;
+}
+
+.legal__body li::before {
+  content: none;
 }
 
 .todo {
