@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDF &amp; Image Toolkit Terms of Use | CatalystCore Studios</title>
+  <meta name="description"
+    content="Terms of Use for PDF &amp; Image Toolkit, an Android app by CatalystCore Studios." />
+  <meta property="og:title" content="PDF &amp; Image Toolkit Terms of Use | CatalystCore Studios" />
+  <meta property="og:type" content="website" />
+  <!-- Update with final production domain before publishing. -->
+  <meta property="og:url" content="https://example.github.io/catalystcore-studios/apps/pdf-image-toolkit/terms.html" />
+  <link rel="canonical" href="https://example.github.io/catalystcore-studios/apps/pdf-image-toolkit/terms.html" />
+  <link rel="icon" href="../../assets/icons/favicon.ico" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <style>
+    /* Legal page refinements */
+    .legal {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .legal::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      height: 360px;
+      background:
+        radial-gradient(circle at 15% 0%, var(--accent-soft), transparent 42%),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.015), transparent);
+      pointer-events: none;
+    }
+
+    .legal__header,
+    .legal__body {
+      position: relative;
+    }
+
+    .legal__header {
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .legal__header h1 {
+      max-width: 850px;
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      letter-spacing: -0.025em;
+    }
+
+    .legal__updated {
+      margin: 0;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+    }
+
+    .legal__body {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 54px 0 80px;
+    }
+
+    .legal__body>p:first-child {
+      color: var(--text);
+      font-size: 1.05rem;
+    }
+
+    .legal__body h2 {
+      position: relative;
+      margin-top: 52px;
+      margin-bottom: 18px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      font-size: clamp(1.3rem, 2.5vw, 1.65rem);
+    }
+
+    .legal__body h2::before {
+      content: "";
+      display: inline-block;
+      width: 24px;
+      height: 3px;
+      margin: 0 10px 4px 0;
+      background: var(--accent);
+      border-radius: 999px;
+    }
+
+    .legal__body p,
+    .legal__body li {
+      font-size: 0.98rem;
+      line-height: 1.8;
+    }
+
+    .legal__body strong {
+      color: var(--text);
+    }
+
+    .legal__body ul {
+      margin: 12px 0 22px;
+      padding: 0;
+    }
+
+    .legal__body li {
+      position: relative;
+      margin: 8px 0;
+      padding-left: 22px;
+      color: var(--text-muted);
+    }
+
+    .legal__body li::before {
+      content: "";
+      position: absolute;
+      left: 3px;
+      top: 0.78em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      transform: translateY(-50%);
+    }
+
+    .legal__body a:not(.back-link) {
+      color: var(--accent-strong);
+      text-decoration: underline;
+      text-decoration-color: rgba(236, 201, 120, 0.35);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+      transition: color 0.15s ease, text-decoration-color 0.15s ease;
+    }
+
+    .legal__body a:not(.back-link):hover {
+      color: #f5d991;
+      text-decoration-color: var(--accent-strong);
+    }
+
+    .terms-highlight {
+      margin: 28px 0;
+      padding: 22px 24px;
+      border: 1px solid rgba(212, 169, 77, 0.28);
+      border-left: 3px solid var(--accent);
+      border-radius: var(--radius-md);
+      background:
+        radial-gradient(circle at 100% 0%, rgba(212, 169, 77, 0.08), transparent 48%),
+        var(--surface);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .terms-highlight p:last-child {
+      margin-bottom: 0;
+    }
+
+    .legal-contact {
+      position: relative;
+      overflow: hidden;
+      margin-top: 24px;
+      padding: 26px 28px;
+      border: 1px solid rgba(212, 169, 77, 0.28);
+      border-radius: var(--radius-lg);
+      background:
+        radial-gradient(circle at 100% 0%, rgba(212, 169, 77, 0.10), transparent 42%),
+        var(--surface);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .legal-contact::after {
+      content: "";
+      position: absolute;
+      width: 190px;
+      height: 190px;
+      right: -100px;
+      bottom: -110px;
+      border: 1px solid rgba(212, 169, 77, 0.12);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .legal-contact__label {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--accent);
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .legal-contact__title {
+      margin-bottom: 8px;
+      font-size: 1.35rem;
+    }
+
+    .legal-contact__text {
+      max-width: 58ch;
+      margin-bottom: 20px;
+      line-height: 1.75;
+    }
+
+    .legal-contact__email {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--accent-strong) !important;
+      font-weight: 650;
+    }
+
+    .legal-contact__email::before {
+      content: "✉";
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+
+    .legal-contact__email:hover {
+      transform: translateX(2px);
+    }
+
+    .privacy-footer-note {
+      margin-top: 44px;
+      padding-top: 22px;
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem !important;
+    }
+
+    @media (max-width: 760px) {
+      .legal__body {
+        padding-top: 38px;
+      }
+
+      .legal__body h2 {
+        margin-top: 42px;
+      }
+
+      .legal-contact {
+        padding: 22px;
+      }
+    }
+
+    .terms-highlight {
+      margin: 28px 0;
+      padding: 20px 24px;
+      border: 1px solid rgba(212, 169, 77, .28);
+      border-left: 3px solid var(--accent);
+      border-radius: var(--radius-md);
+      background: radial-gradient(circle at 100% 0%, rgba(212, 169, 77, .08), transparent 48%), var(--surface);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .terms-highlight strong {
+      color: var(--text);
+    }
+
+    .legal-contact {
+      margin-top: 30px;
+    }
+
+    @media (max-width: 560px) {
+      .legal__body {
+        padding-top: 38px;
+      }
+
+      .legal__body h2 {
+        margin-top: 42px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="navbar">
+    <div class="container navbar__inner"><a class="brand" href="../../index.html"><span class="brand__mark"
+          aria-hidden="true">CC</span>CatalystCore Studios</a><button class="nav-toggle" aria-label="Toggle navigation"
+        aria-expanded="false">Menu</button>
+      <nav class="nav-links" aria-label="Primary"><a href="index.html">Overview</a><a href="privacy.html">Privacy</a><a
+          href="terms.html" aria-current="page">Terms</a></nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="legal">
+      <div class="container">
+        <div class="legal__header"><a class="back-link" href="index.html">&larr; Back to PDF &amp; Image
+            Toolkit</a><span class="eyebrow">Legal</span>
+          <h1 class="mt-0">PDF &amp; Image Toolkit Terms of Use</h1>
+          <p class="legal__updated">Last updated: August 21, 2026</p>
+        </div>
+        <div class="legal__body">
+          <p>These Terms of Use ("Terms") govern your use of <strong>PDF &amp; Image Toolkit</strong> (the "App"),
+            developed and provided by <strong>CatalystCore Studios</strong> ("we", "us", or "our").</p>
+          <p>By downloading, installing, or using the App, you agree to these Terms.</p>
+          <p>If you do not agree with these Terms, please do not use the App.</p>
+
+          <div class="terms-highlight"><strong>Important:</strong> Please review important files and processing results
+            before relying on them. The App is provided as a utility and processing results can vary depending on files,
+            devices, and other technical factors.</div>
+
+          <h2>1. Description of the App</h2>
+          <p>PDF &amp; Image Toolkit is a utility application providing tools for working with PDFs, images, scanned
+            documents, and related content.</p>
+          <p>Features may include PDF manipulation, compression, conversion, scanning, OCR/text recognition, barcode
+            recognition, image processing, and other utilities.</p>
+          <p>Features may be added, modified, or removed as the App develops.</p>
+
+          <h2>2. Your Content</h2>
+          <p>You retain ownership of the documents, images, scans, and other files that you process using the App ("User
+            Content").</p>
+          <p>The App is designed to process User Content locally on your device.</p>
+          <p>You are responsible for:</p>
+          <ul>
+            <li>The files you choose to process</li>
+            <li>Maintaining backups of important files</li>
+            <li>Ensuring that you have the necessary rights to use the files</li>
+            <li>Reviewing files produced by the App before relying on them</li>
+          </ul>
+          <p>We do not claim ownership of your User Content.</p>
+
+          <h2>3. Processing Accuracy</h2>
+          <p>The App provides automated file-processing and conversion tools.</p>
+          <p>Results may vary depending on:</p>
+          <ul>
+            <li>Source file quality</li>
+            <li>File format</li>
+            <li>Document structure</li>
+            <li>Image quality</li>
+            <li>Device capabilities</li>
+            <li>Processing method</li>
+            <li>Other technical factors</li>
+          </ul>
+          <p>Conversions may not reproduce the original document perfectly.</p>
+          <p>OCR and barcode recognition may also produce inaccurate or incomplete results.</p>
+          <p><strong>You should review important output before submitting, sharing, publishing, or otherwise relying
+              upon it.</strong></p>
+
+          <h2>4. Data Preservation and Backups</h2>
+          <p>The App is designed to process files reliably, but we cannot guarantee that every operation will preserve
+            every element of a source file.</p>
+          <p>You are responsible for maintaining backups of important files.</p>
+          <p>To the maximum extent permitted by applicable law, CatalystCore Studios is not responsible for loss or
+            corruption of User Content resulting from your use of the App, device failure, operating-system issues,
+            unsupported files, conversion errors, user actions, or other technical problems.</p>
+
+          <h2>5. Free Features</h2>
+          <p>The App may provide features to users without requiring a Premium purchase.</p>
+          <p>Free usage may be subject to daily, monthly, or other limits.</p>
+          <p>These limits may change over time.</p>
+
+          <h2>6. Advertising</h2>
+          <p>The free version of PDF &amp; Image Toolkit may display advertisements.</p>
+          <p>Advertisements may be provided by third-party advertising services.</p>
+          <p>Advertising availability, placement, frequency, and supported formats may change over time.</p>
+          <p>The App does not provide your PDFs, images, scans, or other User Content to advertising providers for the
+            purpose of generating advertisements.</p>
+
+          <h2>7. Premium Purchase</h2>
+          <p>PDF &amp; Image Toolkit offers an optional <strong>Premium upgrade through a one-time purchase</strong>.
+          </p>
+          <p>The Premium purchase is not a subscription and does not automatically renew.</p>
+          <p>A successful Premium purchase provides access to the Premium functionality made available for the App,
+            subject to these Terms and any applicable changes to the App.</p>
+          <p>Premium access does not provide ownership of the App, its source code, intellectual property, or the
+            CatalystCore Studios brand.</p>
+
+          <h2>8. Premium Pricing</h2>
+          <p>Premium pricing is determined through Google Play.</p>
+          <p>Prices may differ between countries and regions because of:</p>
+          <ul>
+            <li>Local currency</li>
+            <li>Applicable taxes</li>
+            <li>Exchange rates</li>
+            <li>Google Play local pricing</li>
+            <li>Regional pricing requirements</li>
+            <li>Other applicable factors</li>
+          </ul>
+          <p>The price shown by Google Play at the time of purchase is the applicable purchase price.</p>
+          <p>CatalystCore Studios may change the price of Premium in the future.</p>
+
+          <h2>9. Meaning of “Lifetime”</h2>
+          <p>If Premium is described as a <strong>“Lifetime”</strong> purchase within the App or its store listing,
+            “Lifetime” refers to the supported availability of the purchased Premium functionality within PDF &amp;
+            Image Toolkit.</p>
+          <p>It does <strong>not</strong> mean:</p>
+          <ul>
+            <li>Lifetime access to every CatalystCore Studios product</li>
+            <li>Lifetime access to future applications</li>
+            <li>Ownership of the company or its products</li>
+            <li>A guarantee that the App will be available indefinitely</li>
+          </ul>
+          <p>If the App is permanently discontinued, Premium functionality may no longer be available.</p>
+          <p>Nothing in this section limits rights that cannot legally be limited.</p>
+
+          <h2>10. Payments</h2>
+          <p>Premium purchases are processed through <strong>Google Play Billing</strong>.</p>
+          <p>We do not directly process or store your full payment-card information.</p>
+          <p>Google Play handles payment processing according to its applicable terms and policies.</p>
+
+          <h2>11. Refunds and Cancellations</h2>
+          <p>Because Premium is a one-time purchase rather than a recurring subscription, there are no recurring
+            subscription charges to cancel.</p>
+          <p>Refund requests are handled according to Google Play's applicable refund policies and applicable
+            consumer-protection laws.</p>
+          <p>Users may request a refund through the Google Play refund process where eligible.</p>
+          <p>Nothing in these Terms removes any mandatory statutory consumer rights.</p>
+
+          <h2>12. Intellectual Property</h2>
+          <p>The App, including its software, interface, design, branding, graphics, documentation, and other original
+            materials, is owned by or licensed to CatalystCore Studios and is protected by applicable
+            intellectual-property laws.</p>
+          <p>These Terms do not transfer ownership of the App or its intellectual property to you.</p>
+          <p>You receive a limited, non-exclusive, non-transferable right to use the App for its intended purpose.</p>
+
+          <h2>13. Third-Party Components and Services</h2>
+          <p>The App may use third-party software, libraries, frameworks, models, and services.</p>
+          <p>These may include technologies such as:</p>
+          <ul>
+            <li>Firebase</li>
+            <li>Google ML Kit</li>
+            <li>Google Play Billing</li>
+            <li>Google Mobile Ads / AdMob</li>
+            <li>PDF-processing libraries</li>
+            <li>Document-processing libraries</li>
+            <li>Image-processing libraries</li>
+          </ul>
+          <p>Third-party components may be subject to their own licenses and terms.</p>
+
+          <h2>14. Acceptable Use</h2>
+          <p>You agree not to use the App:</p>
+          <ul>
+            <li>For unlawful purposes</li>
+            <li>To process content you do not have permission to use</li>
+            <li>To intentionally interfere with the operation of the App</li>
+            <li>To circumvent technical restrictions or Premium access controls</li>
+            <li>To distribute or exploit the App outside the permissions granted by applicable law</li>
+            <li>In a way that violates applicable laws or regulations</li>
+          </ul>
+
+          <h2>15. Availability and Changes</h2>
+          <p>We aim to keep the App functional and reliable but do not guarantee that:</p>
+          <ul>
+            <li>The App will always be available</li>
+            <li>Every feature will work on every Android device</li>
+            <li>Every file format will remain supported</li>
+            <li>Every processing operation will succeed</li>
+            <li>Processing results will always be accurate</li>
+            <li>The App will remain unchanged</li>
+          </ul>
+          <p>We may update, modify, suspend, or discontinue features when reasonably necessary.</p>
+
+          <h2>16. Disclaimer of Warranties</h2>
+          <p>To the maximum extent permitted by applicable law, the App is provided on an <strong>“as is” and “as
+              available”</strong> basis.</p>
+          <p>We do not guarantee that the App will be completely error-free, uninterrupted, secure, or suitable for
+            every particular purpose.</p>
+          <p>We specifically disclaim warranties regarding the accuracy, completeness, or reliability of converted
+            documents, OCR results, compression results, scans, or other generated output.</p>
+
+          <h2>17. Limitation of Liability</h2>
+          <p>To the maximum extent permitted by applicable law, CatalystCore Studios will not be liable for indirect,
+            incidental, special, consequential, or similar damages arising from your use of the App.</p>
+          <p>This may include, where legally permitted, loss of data, loss of files, business interruption, or damages
+            resulting from reliance on generated or converted content.</p>
+          <p>Nothing in these Terms excludes liability that cannot legally be excluded under applicable law.</p>
+
+          <h2>18. Updates</h2>
+          <p>We may release updates that modify functionality, improve performance, fix bugs, add features, or change
+            existing features.</p>
+          <p>Some updates may be necessary for continued compatibility with Android, Google Play, or third-party
+            services.</p>
+
+          <h2>19. Changes to These Terms</h2>
+          <p>We may update these Terms from time to time.</p>
+          <p>The updated version will be published on this page with a revised “Last Updated” date.</p>
+          <p>Your continued use of the App after an updated version becomes effective constitutes acceptance of the
+            updated Terms to the extent permitted by applicable law.</p>
+
+          <h2>20. Governing Law</h2>
+          <p>These Terms shall be interpreted in accordance with applicable laws.</p>
+          <div class="terms-highlight"><strong>Publication note:</strong> Insert and review the intended governing
+            jurisdiction before publishing these Terms.</div>
+          <p>Nothing in these Terms is intended to remove or restrict rights that cannot legally be removed or
+            restricted under applicable law.</p>
+
+          <h2>21. Contact</h2>
+          <div class="legal-contact"><span class="legal-contact__label">PDF &amp; Image Toolkit Support</span>
+            <h3 class="legal-contact__title">Need to get in touch?</h3>
+            <p class="legal-contact__text">If you have questions about these Terms of Use or <strong>PDF &amp; Image
+                Toolkit</strong>, please contact our support team.</p><a class="legal-contact__email"
+              href="mailto:catalystcore.dev@gmail.com">catalystcore.dev@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© 2026 CatalystCore Studios</p>
+      <nav class="footer__links" aria-label="Footer"><a href="../index.html">Apps</a><a
+          href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="../../about.html#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="../../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Grind Quest Privacy Policy | CatalystCore Studios</title>
+  <meta
+    name="description"
+    content="Privacy Policy for Grind Quest, an offline-first productivity RPG app by CatalystCore Studios."
+  />
+
+  <meta property="og:title" content="Grind Quest Privacy Policy | CatalystCore Studios" />
+  <meta
+    property="og:description"
+    content="Learn how Grind Quest handles local app data, notifications, advertising, and privacy."
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:url"
+    content="https://example.github.io/catalystcore-studios/apps/grind-quest/privacy.html"
+  />
+
+  <link
+    rel="canonical"
+    href="https://example.github.io/catalystcore-studios/apps/grind-quest/privacy.html"
+  />
+
+  <link rel="icon" href="../../assets/icons/favicon.ico" />
+  <link rel="stylesheet" href="../../css/style.css" />
+
+  <style>
+    /* ------------------------------------------------------------------
+       Grind Quest Privacy — Page Enhancements
+       ------------------------------------------------------------------ */
+
+    .privacy-hero {
+      position: relative;
+      overflow: hidden;
+      padding: 76px 0 64px;
+      border-bottom: 1px solid var(--border);
+      background:
+        radial-gradient(
+          circle at 15% 20%,
+          rgba(212, 169, 77, 0.11),
+          transparent 34%
+        ),
+        radial-gradient(
+          circle at 90% 80%,
+          rgba(212, 169, 77, 0.055),
+          transparent 32%
+        );
+    }
+
+    .privacy-hero::after {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      right: -150px;
+      top: -180px;
+      border: 1px solid rgba(212, 169, 77, 0.12);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .privacy-hero__content {
+      position: relative;
+      z-index: 1;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .privacy-hero__title {
+      font-size: clamp(2.6rem, 6vw, 4.4rem);
+      margin-bottom: 18px;
+    }
+
+    .privacy-hero__intro {
+      max-width: 650px;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 28px;
+    }
+
+    .privacy-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .privacy-meta__item {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 11px;
+      border: 1px solid var(--border-strong);
+      border-radius: 999px;
+      background: rgba(19, 19, 21, 0.72);
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.02em;
+    }
+
+    .privacy-meta__item::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 10px rgba(212, 169, 77, 0.35);
+    }
+
+    .privacy-layout {
+      display: grid;
+      grid-template-columns: 190px minmax(0, 720px);
+      gap: 44px;
+      align-items: start;
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .privacy-nav {
+      position: sticky;
+      top: 92px;
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      background: rgba(19, 19, 21, 0.72);
+    }
+
+    .privacy-nav__label {
+      display: block;
+      margin-bottom: 12px;
+      color: var(--accent);
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .privacy-nav a {
+      display: block;
+      padding: 7px 9px;
+      border-radius: 6px;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      transition:
+        color 0.15s ease,
+        background 0.15s ease;
+    }
+
+    .privacy-nav a:hover {
+      color: var(--accent-strong);
+      background: var(--accent-soft);
+    }
+
+    .privacy-content {
+      min-width: 0;
+    }
+
+    .privacy-section {
+      position: relative;
+      padding: 0 0 38px;
+      margin-bottom: 38px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .privacy-section:last-child {
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+
+    .privacy-section h2 {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin: 0 0 18px;
+      padding: 0;
+      border: 0;
+      font-size: 1.35rem;
+    }
+
+    .privacy-section h2::before {
+      content: attr(data-number);
+      flex: 0 0 auto;
+      color: var(--accent);
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .privacy-section p {
+      line-height: 1.8;
+    }
+
+    .privacy-section ul {
+      margin: 16px 0 20px;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .privacy-section li {
+      position: relative;
+      margin: 8px 0;
+      padding: 10px 14px 10px 30px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: rgba(19, 19, 21, 0.5);
+      color: var(--text-muted);
+      transition:
+        border-color 0.15s ease,
+        background 0.15s ease,
+        transform 0.15s ease;
+    }
+
+    .privacy-section li::before {
+      content: "";
+      position: absolute;
+      left: 14px;
+      top: 18px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .privacy-section li:hover {
+      border-color: rgba(212, 169, 77, 0.45);
+      background: rgba(212, 169, 77, 0.045);
+      transform: translateX(2px);
+    }
+
+    .privacy-highlight {
+      margin: 20px 0;
+      padding: 20px 22px;
+      border: 1px solid rgba(212, 169, 77, 0.3);
+      border-left: 3px solid var(--accent);
+      border-radius: var(--radius-md);
+      background:
+        linear-gradient(
+          135deg,
+          rgba(212, 169, 77, 0.075),
+          rgba(212, 169, 77, 0.025)
+        );
+    }
+
+    .privacy-highlight strong {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--text);
+    }
+
+    .privacy-highlight p {
+      margin-bottom: 0;
+    }
+
+    .privacy-contact {
+      padding: 24px;
+      border: 1px solid rgba(212, 169, 77, 0.28);
+      border-radius: var(--radius-lg);
+      background:
+        radial-gradient(
+          circle at 100% 0%,
+          rgba(212, 169, 77, 0.09),
+          transparent 45%
+        ),
+        var(--surface);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .privacy-contact__label {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--accent);
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .privacy-email {
+      display: inline-block;
+      color: var(--accent-strong);
+      font-weight: 650;
+      text-decoration: underline;
+      text-decoration-color: rgba(236, 201, 120, 0.35);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+      transition:
+        color 0.15s ease,
+        text-decoration-color 0.15s ease;
+    }
+
+    .privacy-email:hover {
+      color: #f5d991;
+      text-decoration-color: var(--accent-strong);
+    }
+
+    .privacy-back {
+      margin-bottom: 22px;
+    }
+
+    @media (max-width: 820px) {
+      .privacy-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .privacy-nav {
+        position: static;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2px;
+      }
+
+      .privacy-nav__label {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .privacy-hero {
+        padding: 58px 0 48px;
+      }
+
+      .privacy-hero__title {
+        font-size: clamp(2.35rem, 13vw, 3.3rem);
+      }
+
+      .privacy-nav {
+        grid-template-columns: 1fr;
+      }
+
+      .privacy-nav__label {
+        grid-column: auto;
+      }
+
+      .privacy-section {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+      }
+
+      .privacy-section h2 {
+        font-size: 1.2rem;
+      }
+
+      .privacy-highlight,
+      .privacy-contact {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a class="brand" href="../../index.html">
+        <span class="brand__mark" aria-hidden="true">CC</span>
+        CatalystCore Studios
+      </a>
+
+      <button
+        class="nav-toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        Menu
+      </button>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Overview</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="privacy-hero">
+      <div class="container">
+        <div class="privacy-hero__content">
+          <a class="back-link privacy-back" href="index.html">
+            &larr; Back to Grind Quest
+          </a>
+
+          <span class="eyebrow">Privacy &amp; Data</span>
+
+          <h1 class="display privacy-hero__title">
+            Your progress.<br />
+            <span class="box-accent">Your device.</span>
+          </h1>
+
+          <p class="privacy-hero__intro">
+            Grind Quest is built as an offline-first productivity RPG. Your
+            gameplay and productivity progress is primarily kept on your
+            device, while optional rewarded advertising is provided through
+            Google AdMob.
+          </p>
+
+          <div class="privacy-meta" aria-label="Privacy policy information">
+            <span class="privacy-meta__item">Last updated · July 2026</span>
+            <span class="privacy-meta__item">Offline-first</span>
+            <span class="privacy-meta__item">No account required</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="privacy-layout">
+
+          <aside class="privacy-nav" aria-label="Privacy policy sections">
+            <span class="privacy-nav__label">On this page</span>
+            <a href="#introduction">Introduction</a>
+            <a href="#collection">Information</a>
+            <a href="#local-data">Local Data</a>
+            <a href="#usage">Usage</a>
+            <a href="#notifications">Notifications</a>
+            <a href="#third-party">Third Parties</a>
+            <a href="#advertising">Advertising</a>
+            <a href="#storage">Storage</a>
+            <a href="#children">Children</a>
+            <a href="#security">Security</a>
+            <a href="#changes">Changes</a>
+            <a href="#contact">Contact</a>
+          </aside>
+
+          <article class="privacy-content">
+
+            <section class="privacy-section" id="introduction">
+              <h2 data-number="01">Introduction</h2>
+
+              <p>
+                Grind Quest ("the App") is an independent mobile application
+                developed by CatalystCore Studios. This Privacy Policy
+                explains how the App collects, uses, stores, and protects
+                information while you use Grind Quest.
+              </p>
+
+              <div class="privacy-highlight">
+                <strong>Offline-first by design</strong>
+                <p>
+                  Most user data is stored locally on your device and is not
+                  uploaded to dedicated Grind Quest servers.
+                </p>
+              </div>
+            </section>
+
+            <section class="privacy-section" id="collection">
+              <h2 data-number="02">Information We Collect</h2>
+
+              <p>
+                Grind Quest does not require users to create an account and
+                does not directly collect personal information such as:
+              </p>
+
+              <ul>
+                <li>Full name</li>
+                <li>Email address</li>
+                <li>Phone number</li>
+                <li>Physical address</li>
+                <li>Contacts</li>
+                <li>Photos</li>
+                <li>Files</li>
+                <li>Messages</li>
+              </ul>
+
+              <p>
+                The App allows you to create a custom Hunter Name. Your
+                gameplay and productivity progress associated with the Hunter
+                Name is stored locally on your device.
+              </p>
+            </section>
+
+            <section class="privacy-section" id="local-data">
+              <h2 data-number="03">Local App Data</h2>
+
+              <p>
+                To provide its gameplay and productivity features, Grind Quest
+                stores the following information locally on your device:
+              </p>
+
+              <ul>
+                <li>Hunter Name</li>
+                <li>XP and levels</li>
+                <li>Rank progress</li>
+                <li>Quest history</li>
+                <li>Daily and weekly challenge progress</li>
+                <li>Coins</li>
+                <li>Unlocked personas</li>
+                <li>Reward inventory</li>
+                <li>Active boosters</li>
+                <li>Notification preferences</li>
+                <li>Reminder schedules</li>
+                <li>App settings</li>
+              </ul>
+
+              <p>
+                This information remains on your device and is not transmitted
+                to a dedicated Grind Quest application server.
+              </p>
+            </section>
+
+            <section class="privacy-section" id="usage">
+              <h2 data-number="04">How Information Is Used</h2>
+
+              <p>
+                Information stored by Grind Quest is used to provide and
+                maintain the App's functionality, including:
+              </p>
+
+              <ul>
+                <li>Tracking quests, XP, levels, and rank progression</li>
+                <li>Maintaining challenge and streak progress</li>
+                <li>Managing coins, rewards, personas, and boosters</li>
+                <li>Scheduling reminders and productivity notifications</li>
+                <li>Saving your app preferences and settings</li>
+              </ul>
+
+              <p>
+                The locally stored gameplay and productivity data is not
+                uploaded to or processed by a dedicated Grind Quest server.
+              </p>
+            </section>
+
+            <section class="privacy-section" id="notifications">
+              <h2 data-number="05">Notifications</h2>
+
+              <p>
+                Grind Quest may request notification permission in order to
+                provide optional productivity and gameplay notifications,
+                including:
+              </p>
+
+              <ul>
+                <li>Quest reminders</li>
+                <li>Daily challenge reminders</li>
+                <li>Streak reminders</li>
+                <li>Productivity notifications</li>
+                <li>Reward notifications</li>
+              </ul>
+
+              <p>
+                Notification schedules and preferences are stored locally on
+                your device. You can manage notification permissions through
+                your device's operating system settings.
+              </p>
+            </section>
+
+            <section class="privacy-section" id="third-party">
+              <h2 data-number="06">Third-Party Services</h2>
+
+              <p>
+                Grind Quest currently uses Google AdMob to provide optional
+                rewarded advertisements.
+              </p>
+
+              <p>
+                Google AdMob may collect certain device, advertising, and
+                usage information necessary to provide, personalize where
+                applicable, and measure advertisements. This information is
+                handled according to Google's applicable privacy policies and
+                terms.
+              </p>
+
+              <p>
+                Grind Quest does not operate its own advertising, analytics, or
+                gameplay-data server.
+              </p>
+            </section>
+
+            <section class="privacy-section" id="advertising">
+              <h2 data-number="07">Advertising</h2>
+
+              <div class="privacy-highlight">
+                <strong>Rewarded ads are optional</strong>
+                <p>
+                  Watching a rewarded advertisement is entirely optional and
+                  may provide in-app rewards such as coins or other gameplay
+                  benefits.
+                </p>
+              </div>
+
+              <p>
+                Grind Quest may display optional rewarded advertisements
+                through Google AdMob.
+              </p>
+
+              <p>
+                Google AdMob may collect information from your device in
+                connection with advertising services. The collection and use
+                of such information is governed by Google's own privacy policy
+                and applicable settings and controls.
+              </p>
+            </section>
+
+            <section class="privacy-section" id="storage">
+              <h2 data-number="08">Data Storage and Deletion</h2>
+
+              <p>
+                Grind Quest stores its gameplay and productivity data locally
+                on your device. The App does not currently provide cloud
+                synchronization or upload this data to a dedicated Grind Quest
+                server.
+              </p>
+
+              <p>
+                Because this information is stored locally, uninstalling the
+                App or clearing its app data may permanently remove locally
+                stored Grind Quest progress, depending on your device and
+                operating system's backup behavior.
+              </p>
+            </section>
+
+            <section class="privacy-section" id="children">
+              <h2 data-number="09">Children's Privacy</h2>
+
+              <p>
+                Grind Quest does not knowingly collect personal information
+                from children. The App does not require users to provide
+                personal information or create an account.
+              </p>
+
+              <p>
+                If we become aware that personal information has been
+                collected unintentionally from a child, we will take
+                appropriate steps to remove that information where reasonably
+                possible.
+              </p>
+            </section>
+
+            <section class="privacy-section" id="security">
+              <h2 data-number="10">Data Security</h2>
+
+              <p>
+                We take reasonable measures to protect information handled by
+                the App. Most Grind Quest gameplay and productivity data
+                remains on your device rather than being transmitted to our
+                servers.
+              </p>
+
+              <p>
+                However, no method of electronic storage or transmission is
+                completely secure, and absolute security cannot be guaranteed.
+                Users are responsible for protecting access to their own
+                devices and for maintaining appropriate device security.
+              </p>
+            </section>
+
+            <section class="privacy-section" id="future">
+              <h2 data-number="11">Future Changes to the App</h2>
+
+              <p>
+                Future versions of Grind Quest may introduce optional online
+                features, cloud synchronization, or additional third-party
+                services. If such features materially change how information
+                is collected, used, or shared, this Privacy Policy will be
+                updated before or when those features become available, as
+                applicable.
+              </p>
+            </section>
+
+            <section class="privacy-section" id="changes">
+              <h2 data-number="12">Changes to This Privacy Policy</h2>
+
+              <p>
+                We may update this Privacy Policy from time to time as Grind
+                Quest evolves. Any changes will be reflected on this page, and
+                the "Last updated" date will be revised accordingly.
+              </p>
+            </section>
+
+            <section class="privacy-section" id="contact">
+              <h2 data-number="13">Contact Us</h2>
+
+              <div class="privacy-contact">
+                <span class="privacy-contact__label">Grind Quest Support</span>
+
+                <p>
+                  If you have questions, concerns, or requests regarding this
+                  Privacy Policy or Grind Quest's privacy practices, please
+                  contact:
+                </p>
+
+                <p style="margin-bottom: 0;">
+                  <strong>Grind Quest Support Team</strong><br />
+                  CatalystCore Studios<br />
+                  <a
+                    class="privacy-email"
+                    href="mailto:catalystcore.dev@gmail.com"
+                  >
+                    catalystcore.dev@gmail.com
+                  </a>
+                </p>
+              </div>
+            </section>
+
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© 2026 CatalystCore Studios</p>
+
+      <nav class="footer__links" aria-label="Footer">
+        <a href="../index.html">Apps</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="../../about.html#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
