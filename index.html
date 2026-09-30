@@ -44,6 +44,7 @@
 
   <main id="main">
     <section class="hero">
+      <span class="hero-dot-field" aria-hidden="true"></span>
       <div class="container hero__inner">
         <div class="hero__copy">
           <span class="eyebrow">Independent Software Studio</span>
@@ -64,24 +65,35 @@
         </div>
 
         <div class="hero__visual" aria-hidden="true">
-          <div class="ascent-frame">
-            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="ascentGold" x1="0%" y1="100%" x2="100%" y2="0%">
-                  <stop offset="0%" stop-color="#8a6a24" />
-                  <stop offset="100%" stop-color="#ecc978" />
-                </linearGradient>
-                <linearGradient id="ascentGoldSoft" x1="0%" y1="100%" x2="100%" y2="0%">
-                  <stop offset="0%" stop-color="#3a3a1f" />
-                  <stop offset="100%" stop-color="#6b5324" />
-                </linearGradient>
-              </defs>
-              <line x1="20" y1="350" x2="380" y2="350" stroke="#26262a" stroke-width="1" />
-              <polygon points="40,350 140,180 190,270 240,150 260,350" fill="url(#ascentGoldSoft)" opacity="0.6" />
-              <polygon points="150,350 240,120 330,350" fill="url(#ascentGold)" />
-              <polyline points="150,350 240,120 330,350" fill="none" stroke="#0a0a0b" stroke-width="2" opacity="0.35" />
-              <circle cx="240" cy="120" r="6" fill="#f2f1ed" />
-            </svg>
+          <div class="hero-core">
+            <div class="hero-core__halo"></div>
+            <div class="hero-core__assembly">
+              <span class="hero-core__rail hero-core__rail--one"></span>
+              <span class="hero-core__rail hero-core__rail--two"></span>
+              <div class="hero-core__c">
+                <span class="hero-core__c-back"></span>
+                <span class="hero-core__c-body"></span>
+                <span class="hero-core__c-bevel"></span>
+                <span class="hero-core__c-face"></span>
+                <span class="hero-core__c-seam hero-core__c-seam--top"></span>
+                <span class="hero-core__c-seam hero-core__c-seam--bottom"></span>
+                <span class="hero-core__c-gold hero-core__c-gold--top"></span>
+                <span class="hero-core__c-gold hero-core__c-gold--bottom"></span>
+                <span class="hero-core__c-gold hero-core__c-gold--side"></span>
+                <span class="hero-core__c-gold hero-core__c-gold--tip-top"></span>
+                <span class="hero-core__c-gold hero-core__c-gold--tip-bottom"></span>
+                <span class="hero-core__c-highlight"></span>
+              </div>
+              <span class="hero-core__fin hero-core__fin--one"></span>
+              <span class="hero-core__fin hero-core__fin--two"></span>
+              <div class="hero-core__chamber">
+                <div class="hero-core__hex">
+                  <span class="hero-core__energy"></span>
+                </div>
+              </div>
+              <span class="hero-core__reflection"></span>
+            </div>
+            <span class="hero-core__baseline"></span>
           </div>
         </div>
       </div>
