@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | CatalystCore Studios</title>
+  <meta name="description" content="Privacy Policy for CatalystCore Studios products and services." />
+  <meta property="og:title" content="Privacy Policy | CatalystCore Studios" />
+  <meta property="og:description" content="How CatalystCore Studios collects, uses, stores, protects, and discloses information." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.github.io/catalystcore-studios/apps/privacy.html" />
+  <link rel="canonical" href="https://example.github.io/catalystcore-studios/apps/privacy.html" />
+  <link rel="icon" href="../assets/icons/favicon.ico" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .privacy-page {
+      min-height: 70vh;
+      padding: clamp(42px, 7vw, 76px) 0 clamp(56px, 8vw, 88px);
+    }
+
+    .privacy-policy {
+      width: min(100%, 790px);
+      margin: 0 auto;
+      color: var(--color-text-secondary);
+      font-size: 1rem;
+      line-height: 1.78;
+      overflow-wrap: anywhere;
+    }
+
+    .privacy-policy h1,
+    .privacy-policy h2,
+    .privacy-policy h3,
+    .privacy-policy p,
+    .privacy-policy ul,
+    .privacy-policy ol {
+      margin-top: 0;
+    }
+
+    .privacy-policy h1 {
+      max-width: 18ch;
+      margin-bottom: 18px;
+      color: var(--color-text);
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      font-weight: 800;
+      line-height: 1.04;
+    }
+
+    .privacy-policy__intro-note {
+      margin-bottom: 30px;
+      color: var(--color-text-muted);
+      font-size: 0.94rem;
+    }
+
+
+    .privacy-policy__title {
+      margin: 0 0 20px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #11704E;
+      color: var(--color-text);
+      font-size: clamp(1.35rem, 2.7vw, 1.7rem);
+      line-height: 1.3;
+    }
+
+    .privacy-policy__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .privacy-policy__date {
+      margin: 0;
+      padding: 8px 12px;
+      border: 1px solid var(--color-border);
+      border-left: 2px solid var(--color-gold);
+      border-radius: var(--radius-sm);
+      background: var(--color-surface);
+      color: var(--color-text-secondary);
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      line-height: 1.5;
+    }
+
+    .privacy-policy__section {
+      margin-top: 34px;
+      padding-top: 26px;
+      border-top: 1px solid var(--color-border);
+    }
+
+    .privacy-policy__section > h2 {
+      margin-bottom: 18px;
+      padding-left: 12px;
+      border-left: 2px solid var(--color-emerald);
+      color: var(--color-text);
+      font-size: clamp(1.3rem, 2.6vw, 1.65rem);
+      line-height: 1.3;
+    }
+
+    .privacy-policy__section > h3 {
+      margin: 24px 0 10px;
+      color: var(--color-text);
+      font-size: 1.04rem;
+      line-height: 1.45;
+    }
+
+    .privacy-policy p {
+      margin-bottom: 15px;
+    }
+
+    .privacy-policy ul,
+    .privacy-policy ol {
+      margin-bottom: 18px;
+      padding-left: 26px;
+      list-style: none;
+    }
+
+    .privacy-policy li {
+      position: relative;
+      margin: 7px 0;
+      padding-left: 12px;
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+    }
+
+    .privacy-policy__note {
+      margin-top: 28px;
+      padding: 16px 18px;
+      border: 1px solid var(--color-border);
+      border-left: 2px solid var(--color-emerald);
+      border-radius: var(--radius-sm);
+      background: var(--color-surface);
+      color: var(--color-text-muted);
+      font-size: 0.92rem;
+    }
+
+    .privacy-policy a {
+      color: var(--color-gold-hover);
+      text-decoration: underline;
+      text-decoration-color: rgba(226, 191, 77, 0.45);
+      text-underline-offset: 3px;
+    }
+
+    .privacy-policy a:hover {
+      color: var(--color-text);
+    }
+
+    .privacy-policy a:focus-visible {
+      outline: 2px solid var(--color-emerald);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    @media (max-width: 640px) {
+      .privacy-page {
+        padding-top: 38px;
+      }
+
+      .privacy-policy {
+        font-size: 0.96rem;
+        line-height: 1.72;
+      }
+
+      .privacy-policy__section {
+        margin-top: 28px;
+        padding-top: 22px;
+      }
+
+      .privacy-policy__meta {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 8px;
+      }
+
+      .privacy-policy__date {
+        overflow-wrap: anywhere;
+      }
+
+      .privacy-policy ul,
+      .privacy-policy ol {
+        padding-left: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a class="brand" href="../index.html">
+        <span class="brand__mark" aria-hidden="true">CC</span>
+        CatalystCore Studios
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Apps</a>
+        <a href="../about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="privacy-page">
+    <div class="container">
+      <article class="privacy-policy" aria-labelledby="policy-heading">
+        <!-- <h1 id="policy-heading" data-source-line>CatalystCore Studios - Privacy Policy</h1> -->
+        <!-- <p class="privacy-policy__intro-note" data-source-line>Below is the structure I'd actually use on the website.</p> -->
+        <h1 class="privacy-policy__title" data-source-line>Privacy Policy</h2>
+        <div class="privacy-policy__meta">
+          <p class="privacy-policy__date" data-source-line>Effective Date: 02 October 2026</p>
+          <p class="privacy-policy__date" data-source-line>Last Updated: 02 October 2026</p>
+        </div>
+        <p data-source-line>CatalystCore Studios ("CatalystCore Studios", "CatalystCore", "we", "us", or "our") develops and operates mobile applications, websites, software products, and related digital services.</p>
+        <p data-source-line>This Privacy Policy explains how we collect, use, store, protect, and disclose information when you use our websites, applications, and services.</p>
+        <p data-source-line>By using a CatalystCore product, you acknowledge the practices described in this Privacy Policy.</p>
+
+        <section class="privacy-policy__section">
+          <h2 data-source-line>1. Scope</h2>
+          <p data-source-line>This Privacy Policy applies to CatalystCore Studios products and services that link to or reference this Privacy Policy.</p>
+          <p data-source-line>Individual products may collect different types of information depending on their functionality. Where a product has additional or different data practices, we will provide a Product-Specific Data Notice within that product or its store listing.</p>
+          <p data-source-line>If there is a conflict between this general Privacy Policy and a product-specific notice regarding a particular product's data practices, the product-specific notice will control for that product.</p>
+        </section>
+
+        <section class="privacy-policy__section">
+          <h2 data-source-line>2. Information We Collect</h2>
+          <p data-source-line>We follow a data-minimization approach and aim to collect only information reasonably necessary to provide, maintain, secure, and improve our products.</p>
+          <p data-source-line>Depending on the product you use, information may include:</p>
+          <h3 data-source-line>A. Information You Provide</h3>
+          <p data-source-line>This may include:</p>
+          <ul>
+            <li data-source-line>- name or display name</li>
+            <li data-source-line>- email address</li>
+            <li data-source-line>- account information</li>
+            <li data-source-line>- support messages</li>
+            <li data-source-line>- feedback</li>
+            <li data-source-line>- information you voluntarily submit through forms</li>
+            <li data-source-line>- information required for a specific product feature</li>
+          </ul>
+          <p data-source-line>Not every CatalystCore product requires an account.</p>
+          <h3 data-source-line>B. Files and Content You Select</h3>
+          <p data-source-line>Some CatalystCore applications process files or content that you intentionally provide.</p>
+          <p data-source-line>For example:</p>
+          <ul>
+            <li data-source-line>- PDF files</li>
+            <li data-source-line>- images</li>
+            <li data-source-line>- CSV files</li>
+            <li data-source-line>- documents</li>
+            <li data-source-line>- audio files</li>
+            <li data-source-line>- other files supported by a particular application</li>
+          </ul>
+          <p data-source-line>The handling of these files depends on the specific product.</p>
+          <p data-source-line>Where a product provides local/offline processing, files may remain entirely on your device and may not be uploaded to CatalystCore servers.</p>
+          <p data-source-line>Where a product requires server-side processing, the relevant product notice will explain that processing.</p>
+          <h3 data-source-line>C. Device and Technical Information</h3>
+          <p data-source-line>Depending on the product and permissions granted, we may receive limited technical information such as:</p>
+          <ul>
+            <li data-source-line>- device model</li>
+            <li data-source-line>- operating system and version</li>
+            <li data-source-line>- app version</li>
+            <li data-source-line>- language and region</li>
+            <li data-source-line>- IP address</li>
+            <li data-source-line>- crash information</li>
+            <li data-source-line>- diagnostic information</li>
+            <li data-source-line>- network information</li>
+            <li data-source-line>- approximate technical identifiers</li>
+          </ul>
+          <p data-source-line>We do not require every product to collect all of these categories.</p>
+          <h3 data-source-line>D. Usage Information</h3>
+          <p data-source-line>Depending on the product, we may collect information about how features are used, such as:</p>
+          <ul>
+            <li data-source-line>- screens or features accessed</li>
+            <li data-source-line>- interactions with features</li>
+            <li data-source-line>- error events</li>
+            <li data-source-line>- performance information</li>
+            <li data-source-line>- crash reports</li>
+            <li data-source-line>- subscription or entitlement status</li>
+          </ul>
+          <p data-source-line>Where analytics are used, the relevant third-party provider may process certain technical or usage information according to its own policies.</p>
+          <h3 data-source-line>E. Permissions and Device Features</h3>
+          <p data-source-line>Certain products may request access to device features such as:</p>
+          <ul>
+            <li data-source-line>- camera</li>
+            <li data-source-line>- microphone</li>
+            <li data-source-line>- photos/media</li>
+            <li data-source-line>- files</li>
+            <li data-source-line>- notifications</li>
+            <li data-source-line>- location</li>
+            <li data-source-line>- contacts</li>
+            <li data-source-line>- phone-related functionality</li>
+          </ul>
+          <p data-source-line>We request permissions only when required for a feature.</p>
+          <p data-source-line>The exact permissions used by an application are disclosed through the application's interface, operating-system permission prompts, and/or its product-specific privacy notice.</p>
+          <p data-source-line>Google Play requires sensitive data and permissions to be necessary for the app's core functionality and appropriately disclosed. Google Help</p>
+        </section>
+
+        <section class="privacy-policy__section">
+          <h2 data-source-line>3. How We Use Information</h2>
+          <p data-source-line>We may use information to:</p>
+          <ul>
+            <li data-source-line>- provide requested features</li>
+            <li data-source-line>- process user-requested files or content</li>
+            <li data-source-line>- maintain and operate our applications</li>
+            <li data-source-line>- provide customer support</li>
+            <li data-source-line>- diagnose crashes and technical problems</li>
+            <li data-source-line>- improve application performance</li>
+            <li data-source-line>- prevent fraud, abuse, or unauthorized use</li>
+            <li data-source-line>- maintain security</li>
+            <li data-source-line>- manage purchases or entitlements</li>
+            <li data-source-line>- communicate important service information</li>
+            <li data-source-line>- comply with legal obligations</li>
+            <li data-source-line>- enforce our Terms &amp; Conditions</li>
+          </ul>
+          <p data-source-line>We do not use personal information for purposes incompatible with the purposes disclosed to you.</p>
+        </section>
+
+        <section class="privacy-policy__section">
+          <h2 data-source-line>4. File and Content Processing</h2>
+          <p data-source-line>Some CatalystCore products are specifically designed to process files supplied by users.</p>
+          <p data-source-line>When you upload or provide content to a product:</p>
+          <ol>
+            <li data-source-line>1. We process the content to provide the requested functionality.</li>
+            <li data-source-line>2. We do not claim ownership of your files merely because you use our service.</li>
+            <li data-source-line>3. We do not intentionally sell user-uploaded files or personal content.</li>
+            <li data-source-line>4. We retain uploaded content only for as long as reasonably necessary for the applicable functionality, unless a product specifically states otherwise.</li>
+          </ol>
+          <h3 data-source-line>Offline Products</h3>
+          <p data-source-line>For products designed to work offline, processing may occur entirely on your device.</p>
+          <p data-source-line>In such cases, your files may never be transmitted to CatalystCore servers.</p>
+          <p data-source-line>The product's specific privacy notice should be consulted to determine whether a particular feature operates locally or through a server.</p>
+        </section>
+
+        <section class="privacy-policy__section">
+          <h2 data-source-line>5. Advertising</h2>
+          <p data-source-line>Some CatalystCore products may display advertisements.</p>
+          <p data-source-line>Advertising providers may receive certain information required to provide, measure, and prevent abuse of advertising services.</p>
+          <p data-source-line>Depending on the advertising technology used, this may include information such as:</p>
+          <ul>
+            <li data-source-line>- advertising identifiers</li>
+            <li data-source-line>- device information</li>
+            <li data-source-line>- approximate location</li>
+            <li data-source-line>- app interaction information</li>
+            <li data-source-line>- advertising-related information</li>
+          </ul>
+          <p data-source-line>The exact advertising partners used by each application may vary.</p>
+          <p data-source-line>Where required, we will provide appropriate disclosures and consent mechanisms.</p>
+        </section>
+
+        <section class="privacy-policy__section">
+          <h2 data-source-line>6. Analytics and Crash Reporting</h2>
+          <p data-source-line>We may use third-party services to understand application performance and diagnose technical problems.</p>
+          <p data-source-line>These services may process information such as:</p>
+          <ul>
+            <li data-source-line>- crash logs</li>
+            <li data-source-line>- device model</li>
+            <li data-source-line>- operating-system version</li>
+            <li data-source-line>- application version</li>
+            <li data-source-line>- performance information</li>
+            <li data-source-line>- limited usage information</li>
+          </ul>
+          <p data-source-line>Examples of providers may include analytics, crash-reporting, advertising, cloud-hosting, or infrastructure providers.</p>
+          <p data-source-line>The actual providers used by each application will depend on the product.</p>
+        </section>
+
+        <section class="privacy-policy__section">
+          <h2 data-source-line>7. Payments and Purchases</h2>
+          <p data-source-line>Some CatalystCore products may offer:</p>
+          <ul>
+            <li data-source-line>- one-time purchases</li>
+            <li data-source-line>- subscriptions</li>
+            <li data-source-line>- premium features</li>
+            <li data-source-line>- consumable purchases</li>
+            <li data-source-line>- other digital products</li>
+          </ul>
+          <p data-source-line>For Android applications distributed through Google Play, payments are generally processed through Google Play's billing infrastructure.</p>
+          <p data-source-line>CatalystCore does not generally receive or store your full payment card number when payment is processed by Google Play.</p>
+          <p data-source-line>Purchase status, transaction identifiers, subscription status, and related information may be provided to us so that we can provide purchased features.</p>
+        </section>
+
+        <section class="privacy-policy__section">
+          <h2 data-source-line>8. Third-Party Services</h2>
+          <p data-source-line>CatalystCore products may use third-party services for purposes such as:</p>
+          <ul>
+            <li data-source-line>- application distribution</li>
+            <li data-source-line>- payments</li>
+            <li data-source-line>- advertising</li>
+            <li data-source-line>- analytics</li>
+            <li data-source-line>- crash reporting</li>
+            <li data-source-line>- authentication</li>
+            <li data-source-line>- cloud hosting</li>
+            <li data-source-line>- storage</li>
+            <li data-source-line>- APIs</li>
+            <li data-source-line>- infrastructure</li>
+          </ul>
+          <p data-source-line>Third-party services may process information according to their own privacy policies.</p>
+          <p data-source-line>We aim to use third-party providers that are appropriate for the relevant functionality and to disclose relevant data practices.</p>
+          <p data-source-line>Google Play also requires developers to ensure that third-party SDKs used in their apps comply with applicable user-data requirements. Google Help</p>
+        </section>
+
+        <section class="privacy-policy__section">
+          <h2 data-source-line>9. Data Sharing</h2>
+          <p data-source-line>We may disclose information to:</p>
+          <h3 data-source-line>Service Providers</h3>
+          <p data-source-line>Companies that provide services necessary to operate our products, such as hosting, analytics, advertising, payments, customer support, and infrastructure.</p>
+          <h3 data-source-line>Legal Requirements</h3>
+          <p data-source-line>We may disclose information where reasonably necessary to:</p>
+          <ul>
+            <li data-source-line>- comply with applicable law</li>
+            <li data-source-line>- respond to lawful requests</li>
+            <li data-source-line>- protect our rights</li>
+            <li data-source-line>- investigate fraud or abuse</li>
+            <li data-source-line>- protect users or the public</li>
+            <li data-source-line>- enforce our agreements</li>
+          </ul>
+          <h3 data-source-line>Business Transfers</h3>
+          <p data-source-line>If CatalystCore Studios undergoes a merger, acquisition, restructuring, sale of assets, or similar transaction, information may be transferred as part of that transaction, subject to applicable law.</p>
+          <h3 data-source-line>With Your Direction</h3>
+          <p data-source-line>We may share information when you specifically request or authorize us to do so.</p>
+        </section>
+
+        <section class="privacy-policy__section">
+          <h2 data-source-line>10. Data Security</h2>
+          <p data-source-line>We take reasonable technical and organizational measures to protect information against unauthorized access, alteration, disclosure, or destruction.</p>
+          <p data-source-line>Depending on the product, these measures may include:</p>
+          <ul>
+            <li data-source-line>- HTTPS/TLS for network communication</li>
+            <li data-source-line>- access controls</li>
+            <li data-source-line>- secure cloud infrastructure</li>
+            <li data-source-line>- limited data retention</li>
+            <li data-source-line>- authentication controls</li>
+            <li data-source-line>- secure development practices</li>
+            <li data-source-line>- dependency and SDK review</li>
+          </ul>
+          <p data-source-line>However, no internet-based system can be guaranteed to be completely secure.</p>
+        </section>
+
+        <section class="privacy-policy__section">
+          <h2 data-source-line>11. Data Retention</h2>
+          <p data-source-line>We retain information only for as long as reasonably necessary for the purposes described in this policy, including:</p>
+          <ul>
+            <li data-source-line>- providing services</li>
+            <li data-source-line>- maintaining security</li>
+            <li data-source-line>- resolving disputes</li>
+            <li data-source-line>- complying with legal obligations</li>
+            <li data-source-line>- enforcing agreements</li>
+            <li data-source-line>- maintaining legitimate business records</li>
+          </ul>
+          <p data-source-line>Retention periods may differ between products.</p>
+          <p data-source-line>For example, an offline application may retain information only on the user's device, while a cloud-based product may temporarily retain uploaded content to provide its functionality.</p>
+        </section>
+
+        <section class="privacy-policy__section">
+          <h2 data-source-line>12. Account Deletion and Data Deletion</h2>
+          <p data-source-line>If a CatalystCore product allows users to create accounts, we will provide an appropriate mechanism for requesting account deletion where required.</p>
+          <p data-source-line>When an account deletion request is received, applicable account and associated user data will be deleted within the applicable retention and legal requirements, subject to information that must be retained for legitimate legal or security reasons.</p>
+          <p data-source-line>Google Play specifically requires apps that support account creation to provide a clear account-deletion mechanism and to delete associated data when an eligible deletion request is made. Google Help</p>
+          <p data-source-line>For products without accounts, users may contact us regarding deletion of information that CatalystCore controls.</p>
+          <h3 data-source-line>Data Deletion Request:</h3>
+          <p data-source-line><a href="mailto:support.catalystcore@gmail.com">support.catalystcore@gmail.com</a></p>
+        </section>
+
+        <section class="privacy-policy__section">
+          <h2 data-source-line>13. Children's Privacy</h2>
+          <p data-source-line>Our products are not automatically intended for children.</p>
+          <p data-source-line>Unless a product explicitly states otherwise, CatalystCore products are not designed to knowingly collect personal information from children in violation of applicable law.</p>
+          <p data-source-line>If we learn that personal information has been collected from a child in circumstances where it should not have been, we will take appropriate steps to delete it.</p>
+          <p data-source-line>Products with specific age targeting may have additional requirements and disclosures.</p>
+        </section>
+
+        <section class="privacy-policy__section">
+          <h2 data-source-line>14. International Users</h2>
+          <p data-source-line>CatalystCore Studios may operate products that are accessible internationally.</p>
+          <p data-source-line>Information may therefore be processed in countries other than the country in which you live.</p>
+          <p data-source-line>Where applicable, we will use appropriate safeguards and comply with applicable privacy and data-protection requirements.</p>
+          <p data-source-line>This policy is intended to operate alongside applicable privacy laws, including laws that may apply based on your location.</p>
+        </section>
+
+        <section class="privacy-policy__section">
+          <h2 data-source-line>15. Your Privacy Rights</h2>
+          <p data-source-line>Depending on your jurisdiction, you may have rights concerning your personal information, which may include:</p>
+          <ul>
+            <li data-source-line>- access</li>
+            <li data-source-line>- correction</li>
+            <li data-source-line>- deletion</li>
+            <li data-source-line>- restriction of processing</li>
+            <li data-source-line>- objection</li>
+            <li data-source-line>- withdrawal of consent</li>
+            <li data-source-line>- data portability</li>
+            <li data-source-line>- information about processing</li>
+          </ul>
+          <p data-source-line>The exact rights available to you depend on applicable law.</p>
+          <p data-source-line>To make a privacy request:</p>
+          <p data-source-line>Email: <a href="mailto:support.catalystcore@gmail.com">support.catalystcore@gmail.com</a></p>
+          <p data-source-line>We may need to verify your request before completing it.</p>
+        </section>
+
+        <section class="privacy-policy__section">
+          <h2 data-source-line>16. Changes to This Privacy Policy</h2>
+          <p data-source-line>We may update this Privacy Policy from time to time.</p>
+          <p data-source-line>When changes are made, we will update the Last Updated date.</p>
+          <p data-source-line>If a change materially affects how we handle personal information, we may provide additional notice where required.</p>
+        </section>
+
+        <section class="privacy-policy__section">
+          <h2 data-source-line>17. Contact Us</h2>
+          <p data-source-line><a href="mailto:support.catalystcore@gmail.com">support.catalystcore@gmail.com</a></p>
+        </section>
+
+        <p class="privacy-policy__note" data-source-line>Note:CatalystCore Studios currently operates as an independent software studio. Where a formal legal entity or registered business address is applicable, the relevant information will be updated on this page.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© 2026 CatalystCore Studios</p>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="index.html">Apps</a>
+        <a href="privacy.html" aria-current="page">Privacy Policy</a>
+        <a href="../about.html#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

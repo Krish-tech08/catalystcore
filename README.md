@@ -18,13 +18,14 @@ or database is required. It is designed to be deployed directly on
 ├── about.html                     About CatalystCore Studios
 ├── apps/
 │   ├── index.html                 Full list of all apps
+│   ├── privacy.html               Single shared privacy policy
 │   ├── grind-quest/
 │   │   ├── index.html             App overview / landing page
-│   │   ├── privacy.html           Privacy Policy
+│   │   ├── privacy.html           Legacy privacy URL redirect
 │   │   └── terms.html             Terms of Use
 │   └── pdf-image-toolkit/
 │       ├── index.html
-│       ├── privacy.html
+│       ├── privacy.html           Legacy privacy URL redirect
 │       └── terms.html
 ├── assets/
 │   ├── images/                    General images (OG covers, screenshots)
@@ -66,29 +67,27 @@ The project is structured so a new app can be added without restructuring
 anything else.
 
 1. **Create the new app folder** under `apps/`, e.g. `apps/new-app/`.
-2. **Copy the existing app template** — duplicate the three files from an
-   existing app folder (e.g. `apps/pdf-image-toolkit/`):
+2. **Copy the overview and terms templates** from an existing app folder
+      (e.g. `apps/pdf-image-toolkit/`):
    - `index.html`
-   - `privacy.html`
    - `terms.html`
-3. **Replace app name, description, logo, and links** in all three copied
+3. **Replace app name, description, logo, and links** in both copied
    files:
    - Page `<title>` and meta description
    - Open Graph tags and canonical URL
    - App name, tagline, and description in the visible content
    - Icon initials / logo image (see `assets/logos/`)
 4. **Add an app card** to `apps/index.html`, using an existing
-   `<article class="card app-card">` block as a template. Point its three
-   buttons at `new-app/index.html`, `new-app/privacy.html`, and
-   `new-app/terms.html`.
+      `<article class="card app-card">` block as a template. Point its privacy
+      link to the new app's `privacy.html` entry point.
 5. **Add the app to the homepage** (`index.html`) if it should be featured
    there too — copy the same app card block into the `#apps` section.
 6. **Add the Play Store URL** by replacing the `<!-- TODO: Add actual Play
    Store URL -->` placeholder button `href` in the new app's `index.html`.
-7. **Update the new app's `privacy.html`** with the app's actual data
-   collection, permissions, storage, third-party service, and advertising
-   details — replace every `[UPDATE THIS SECTION ...]` placeholder. Do not
-   leave placeholder text in a published privacy policy.
+7. **Update the shared policy** in `apps/privacy.html` to cover the new app's
+      actual data collection, permissions, storage, third-party services, and
+      advertising details. Keep `apps/new-app/privacy.html` as a redirect to
+      `../privacy.html` if the app's public URL must remain available.
 
 No changes to `css/style.css`, `js/main.js`, or the overall folder structure
 are needed — the design system and shared components already support
@@ -125,14 +124,14 @@ Search the project for `TODO` to find every item below in context.
 - [ ] Add `assets/icons/favicon.ico`.
 - [ ] Add `assets/images/og-cover.png` (homepage) and per-app OG cover
       images.
-- [ ] Add a support email address on `about.html` and in every
-      `privacy.html` / `terms.html` "Contact" section.
+- [ ] Add a support email address on `about.html`, in `apps/privacy.html`,
+      and in each `terms.html` "Contact" section.
 - [ ] Optionally expand the "Approach" section on `about.html`.
 
 **Grind Quest**
 - [ ] Add the real Google Play Store URL in `apps/grind-quest/index.html`.
-- [ ] Complete `apps/grind-quest/privacy.html`: data collected, how it's
-      used, permissions, data storage, third-party services, advertising.
+- [ ] Review the shared policy in `apps/privacy.html` for Grind Quest: data
+      collected, use, permissions, storage, third-party services, advertising.
 - [ ] Confirm the children's privacy statement matches the app's actual
       audience.
 - [ ] Set the "Last updated" date on both `privacy.html` and `terms.html`.
@@ -143,8 +142,8 @@ Search the project for `TODO` to find every item below in context.
       `apps/pdf-image-toolkit/index.html`.
 - [ ] Add the specific list of PDF and image tools included, in
       `apps/pdf-image-toolkit/index.html`.
-- [ ] Complete `apps/pdf-image-toolkit/privacy.html`: data collected, how
-      it's used, permissions, data storage, third-party services,
+- [ ] Review the shared policy in `apps/privacy.html` for PDF & Image Toolkit:
+      data collected, use, permissions, storage, third-party services,
       advertising.
 - [ ] Confirm the children's privacy statement matches the app's actual
       audience.

@@ -1,0 +1,219 @@
+1. CatalystCore Studios — Privacy Policy
+Below is the structure I'd actually use on the website.
+Privacy Policy
+Effective Date: 02 October 2026
+Last Updated: 02 October 2026
+CatalystCore Studios ("CatalystCore Studios", "CatalystCore", "we", "us", or "our") develops and operates mobile applications, websites, software products, and related digital services.
+This Privacy Policy explains how we collect, use, store, protect, and disclose information when you use our websites, applications, and services.
+By using a CatalystCore product, you acknowledge the practices described in this Privacy Policy.
+1. Scope
+This Privacy Policy applies to CatalystCore Studios products and services that link to or reference this Privacy Policy.
+Individual products may collect different types of information depending on their functionality. Where a product has additional or different data practices, we will provide a Product-Specific Data Notice within that product or its store listing.
+If there is a conflict between this general Privacy Policy and a product-specific notice regarding a particular product's data practices, the product-specific notice will control for that product.
+2. Information We Collect
+We follow a data-minimization approach and aim to collect only information reasonably necessary to provide, maintain, secure, and improve our products.
+Depending on the product you use, information may include:
+A. Information You Provide
+This may include:
+- name or display name
+- email address
+- account information
+- support messages
+- feedback
+- information you voluntarily submit through forms
+- information required for a specific product feature
+Not every CatalystCore product requires an account.
+B. Files and Content You Select
+Some CatalystCore applications process files or content that you intentionally provide.
+For example:
+- PDF files
+- images
+- CSV files
+- documents
+- audio files
+- other files supported by a particular application
+The handling of these files depends on the specific product.
+Where a product provides local/offline processing, files may remain entirely on your device and may not be uploaded to CatalystCore servers.
+Where a product requires server-side processing, the relevant product notice will explain that processing.
+C. Device and Technical Information
+Depending on the product and permissions granted, we may receive limited technical information such as:
+- device model
+- operating system and version
+- app version
+- language and region
+- IP address
+- crash information
+- diagnostic information
+- network information
+- approximate technical identifiers
+We do not require every product to collect all of these categories.
+D. Usage Information
+Depending on the product, we may collect information about how features are used, such as:
+- screens or features accessed
+- interactions with features
+- error events
+- performance information
+- crash reports
+- subscription or entitlement status
+Where analytics are used, the relevant third-party provider may process certain technical or usage information according to its own policies.
+E. Permissions and Device Features
+Certain products may request access to device features such as:
+- camera
+- microphone
+- photos/media
+- files
+- notifications
+- location
+- contacts
+- phone-related functionality
+We request permissions only when required for a feature.
+The exact permissions used by an application are disclosed through the application's interface, operating-system permission prompts, and/or its product-specific privacy notice.
+Google Play requires sensitive data and permissions to be necessary for the app's core functionality and appropriately disclosed. Google Help
+3. How We Use Information
+We may use information to:
+- provide requested features
+- process user-requested files or content
+- maintain and operate our applications
+- provide customer support
+- diagnose crashes and technical problems
+- improve application performance
+- prevent fraud, abuse, or unauthorized use
+- maintain security
+- manage purchases or entitlements
+- communicate important service information
+- comply with legal obligations
+- enforce our Terms & Conditions
+We do not use personal information for purposes incompatible with the purposes disclosed to you.
+4. File and Content Processing
+Some CatalystCore products are specifically designed to process files supplied by users.
+When you upload or provide content to a product:
+1. We process the content to provide the requested functionality.
+2. We do not claim ownership of your files merely because you use our service.
+3. We do not intentionally sell user-uploaded files or personal content.
+4. We retain uploaded content only for as long as reasonably necessary for the applicable functionality, unless a product specifically states otherwise.
+Offline Products
+For products designed to work offline, processing may occur entirely on your device.
+In such cases, your files may never be transmitted to CatalystCore servers.
+The product's specific privacy notice should be consulted to determine whether a particular feature operates locally or through a server.
+5. Advertising
+Some CatalystCore products may display advertisements.
+Advertising providers may receive certain information required to provide, measure, and prevent abuse of advertising services.
+Depending on the advertising technology used, this may include information such as:
+- advertising identifiers
+- device information
+- approximate location
+- app interaction information
+- advertising-related information
+The exact advertising partners used by each application may vary.
+Where required, we will provide appropriate disclosures and consent mechanisms.
+6. Analytics and Crash Reporting
+We may use third-party services to understand application performance and diagnose technical problems.
+These services may process information such as:
+- crash logs
+- device model
+- operating-system version
+- application version
+- performance information
+- limited usage information
+Examples of providers may include analytics, crash-reporting, advertising, cloud-hosting, or infrastructure providers.
+The actual providers used by each application will depend on the product.
+7. Payments and Purchases
+Some CatalystCore products may offer:
+- one-time purchases
+- subscriptions
+- premium features
+- consumable purchases
+- other digital products
+For Android applications distributed through Google Play, payments are generally processed through Google Play's billing infrastructure.
+CatalystCore does not generally receive or store your full payment card number when payment is processed by Google Play.
+Purchase status, transaction identifiers, subscription status, and related information may be provided to us so that we can provide purchased features.
+8. Third-Party Services
+CatalystCore products may use third-party services for purposes such as:
+- application distribution
+- payments
+- advertising
+- analytics
+- crash reporting
+- authentication
+- cloud hosting
+- storage
+- APIs
+- infrastructure
+Third-party services may process information according to their own privacy policies.
+We aim to use third-party providers that are appropriate for the relevant functionality and to disclose relevant data practices.
+Google Play also requires developers to ensure that third-party SDKs used in their apps comply with applicable user-data requirements. Google Help
+9. Data Sharing
+We may disclose information to:
+Service Providers
+Companies that provide services necessary to operate our products, such as hosting, analytics, advertising, payments, customer support, and infrastructure.
+Legal Requirements
+We may disclose information where reasonably necessary to:
+- comply with applicable law
+- respond to lawful requests
+- protect our rights
+- investigate fraud or abuse
+- protect users or the public
+- enforce our agreements
+Business Transfers
+If CatalystCore Studios undergoes a merger, acquisition, restructuring, sale of assets, or similar transaction, information may be transferred as part of that transaction, subject to applicable law.
+With Your Direction
+We may share information when you specifically request or authorize us to do so.
+10. Data Security
+We take reasonable technical and organizational measures to protect information against unauthorized access, alteration, disclosure, or destruction.
+Depending on the product, these measures may include:
+- HTTPS/TLS for network communication
+- access controls
+- secure cloud infrastructure
+- limited data retention
+- authentication controls
+- secure development practices
+- dependency and SDK review
+However, no internet-based system can be guaranteed to be completely secure.
+11. Data Retention
+We retain information only for as long as reasonably necessary for the purposes described in this policy, including:
+- providing services
+- maintaining security
+- resolving disputes
+- complying with legal obligations
+- enforcing agreements
+- maintaining legitimate business records
+Retention periods may differ between products.
+For example, an offline application may retain information only on the user's device, while a cloud-based product may temporarily retain uploaded content to provide its functionality.
+12. Account Deletion and Data Deletion
+If a CatalystCore product allows users to create accounts, we will provide an appropriate mechanism for requesting account deletion where required.
+When an account deletion request is received, applicable account and associated user data will be deleted within the applicable retention and legal requirements, subject to information that must be retained for legitimate legal or security reasons.
+Google Play specifically requires apps that support account creation to provide a clear account-deletion mechanism and to delete associated data when an eligible deletion request is made. Google Help
+For products without accounts, users may contact us regarding deletion of information that CatalystCore controls.
+Data Deletion Request:
+support.catalystcore@gmail.com
+13. Children's Privacy
+Our products are not automatically intended for children.
+Unless a product explicitly states otherwise, CatalystCore products are not designed to knowingly collect personal information from children in violation of applicable law.
+If we learn that personal information has been collected from a child in circumstances where it should not have been, we will take appropriate steps to delete it.
+Products with specific age targeting may have additional requirements and disclosures.
+14. International Users
+CatalystCore Studios may operate products that are accessible internationally.
+Information may therefore be processed in countries other than the country in which you live.
+Where applicable, we will use appropriate safeguards and comply with applicable privacy and data-protection requirements.
+This policy is intended to operate alongside applicable privacy laws, including laws that may apply based on your location.
+15. Your Privacy Rights
+Depending on your jurisdiction, you may have rights concerning your personal information, which may include:
+- access
+- correction
+- deletion
+- restriction of processing
+- objection
+- withdrawal of consent
+- data portability
+- information about processing
+The exact rights available to you depend on applicable law.
+To make a privacy request:
+Email: support.catalystcore@gmail.com
+We may need to verify your request before completing it.
+16. Changes to This Privacy Policy
+We may update this Privacy Policy from time to time.
+When changes are made, we will update the Last Updated date.
+If a change materially affects how we handle personal information, we may provide additional notice where required.
+17. Contact Us
+support.catalystcore@gmail.com
+note:CatalystCore Studios currently operates as an independent software studio. Where a formal legal entity or registered business address is applicable, the relevant information will be updated on this page.
