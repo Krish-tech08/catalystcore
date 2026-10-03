@@ -814,6 +814,39 @@ input:focus-visible {
   width: 34px;
   height: 2px;
   background: linear-gradient(90deg, var(--color-gold) 0 72%, var(--color-emerald) 72% 100%);
+  clip-path: inset(0 100% 0 0);
+  animation-name: statement-accent-draw, statement-accent-pulse;
+  animation-duration: 900ms, 9s;
+  animation-timing-function: var(--ease-emphasized), ease-in-out;
+  animation-delay: 0s, 900ms;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: both, none;
+  animation-timeline: auto, auto;
+  animation-range: normal, normal;
+}
+
+@supports (animation-timeline: view()) {
+  .statement__lead .box-accent--rust::after {
+    animation-timeline: view(), auto;
+    animation-range: entry 12% entry 42%, normal;
+  }
+}
+
+@keyframes statement-accent-draw {
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes statement-accent-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 rgba(15, 163, 110, 0);
+  }
+
+  50% {
+    box-shadow: 0 0 3px rgba(15, 163, 110, 0.18);
+  }
 }
 
 .statement__body {
@@ -830,6 +863,43 @@ input:focus-visible {
   width: 3px;
   height: 28px;
   background: linear-gradient(var(--color-emerald), rgba(15, 163, 110, 0.12));
+}
+
+.statement__body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 1px;
+  height: 32px;
+  background: linear-gradient(180deg, transparent, var(--color-emerald), transparent);
+  box-shadow: 0 0 4px rgba(15, 163, 110, 0.16);
+  opacity: 0;
+  pointer-events: none;
+  animation: statement-divider-highlight 7s ease-in-out infinite;
+}
+
+@keyframes statement-divider-highlight {
+  0%,
+  100% {
+    top: 0;
+    opacity: 0;
+  }
+
+  12% {
+    top: 0;
+    opacity: 0.28;
+  }
+
+  78% {
+    top: calc(100% - 32px);
+    opacity: 0.28;
+  }
+
+  90% {
+    top: calc(100% - 32px);
+    opacity: 0;
+  }
 }
 
 .statement__body p {
@@ -867,6 +937,24 @@ input:focus-visible {
     width: 34px;
     height: 3px;
     background: linear-gradient(90deg, var(--color-emerald), rgba(15, 163, 110, 0.12));
+  }
+
+  .statement__body::after {
+    display: none;
+    animation: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .statement__lead .box-accent--rust::after {
+    clip-path: none;
+    animation: none;
+    box-shadow: none;
+  }
+
+  .statement__body::after {
+    animation: none;
+    opacity: 0;
   }
 }
 

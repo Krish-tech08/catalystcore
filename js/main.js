@@ -108,3 +108,22 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(el);
   });
 });
+
+
+document.querySelectorAll(".app-card[data-link]").forEach((card) => {
+  card.addEventListener("click", (event) => {
+    // Don't redirect when clicking an existing button/link
+    if (event.target.closest("a, button")) return;
+
+    window.location.href = card.dataset.link;
+  });
+
+  // Allow keyboard users to open the card
+  card.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      card.click();
+    }
+  });
+});
+
