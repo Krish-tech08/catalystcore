@@ -12,24 +12,24 @@
   <meta property="og:type" content="website" />
   <!-- TODO: Update with final production domain -->
   <meta property="og:url" content="https://example.github.io/catalystcore-studios/" />
-  <meta property="og:image" content="assets/images/og-cover.png" />
+  <meta property="og:image" content="/assets/hero-logo.png" />
   <!-- TODO: Add assets/images/og-cover.png (1200x630 recommended) -->
 
   <!-- TODO: Update canonical URL once the site has a final domain -->
   <link rel="canonical" href="https://example.github.io/catalystcore-studios/" />
 
-  <link rel="icon" href="assets/icons/favicon.ico" />
-  <!-- TODO: Add assets/icons/favicon.ico -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="/assets/hero-logo.png" />
+  
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="navbar">
     <div class="container navbar__inner">
-      <a class="brand" href="index.html">
+      <a class="brand" href="/">
         <span class="brand__mark" aria-hidden="true">
-          <img src="/catalystcore/assets/Hero logo bg remove v2.png" alt="" />
+          <img src="/assets/hero-logo.png" alt="" />
         </span>
         CatalystCore Studios
       </a>
@@ -37,9 +37,9 @@
         Menu
       </button>
       <nav class="nav-links" aria-label="Primary">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="apps/index.html">Apps</a>
-        <a href="about.html">About</a>
+        <a href="/" aria-current="page">Home</a>
+        <a href="/apps/">Apps</a>
+        <a href="/about.html">About</a>
       </nav>
     </div>
   </header>
@@ -60,13 +60,13 @@
             actually get used.
           </p>
           <div class="hero__cta">
-            <a class="btn btn--primary" href="apps/index.html">Explore Our Apps</a>
-            <a class="btn btn--secondary" href="about.html">About CatalystCore</a>
+            <a class="btn btn--primary" href="/apps/">Explore Our Apps</a>
+            <a class="btn btn--secondary" href="/about.html">About CatalystCore</a>
           </div>
         </div>
 
         <div class="hero__visual" aria-hidden="true">
-          <img class="hero__logo" src="./assets/Hero logo bg remove v2.png" alt="" />
+          <img class="hero__logo" src="/assets/hero-logo.png" alt="" />
         </div>
       </div>
     </section>
@@ -104,12 +104,12 @@
           <!-- Grind Quest -->
           <article 
             class="card app-card reveal"
-            data-link="apps/grind-quest/index.html"
+            data-link="/apps/grind-quest/"
             tabindex="0"
             role="link"
           >
             <div class="app-card__icon app-card__icon--image" aria-hidden="true">
-              <img src="assets/products-logo/Grind-quest.jpeg" alt="" />
+              <img src="/assets/products-logo/grind-quest.jpeg" alt="" />
             </div>
             <span class="app-card__tag">Productivity · RPG</span>
             <h3>Grind Quest</h3>
@@ -120,22 +120,22 @@
               and keep progressing.
             </p>
             <div class="app-card__actions">
-              <a class="btn btn--secondary btn--small" href="apps/grind-quest/index.html">About</a>
-              <a class="btn btn--secondary btn--small" href="apps/grind-quest/privacy.html">Privacy Policy</a>
-              <a class="btn btn--secondary btn--small" href="apps/terms.html">Terms</a>
+              <a class="btn btn--secondary btn--small" href="/apps/grind-quest/">About</a>
+              <a class="btn btn--secondary btn--small" href="/apps/grind-quest/privacy.html">Privacy Policy</a>
+              <a class="btn btn--secondary btn--small" href="/apps/terms.html">Terms</a>
             </div>
           </article>
 
           <!-- PDF & Image Toolkit -->
           <article 
             class="card app-card reveal"
-            data-link="apps/pdf-image-toolkit/index.html"
+            data-link="/apps/pdf-image-toolkit/"
             tabindex="0"
             role="link"
           
           >
             <div class="app-card__icon app-card__icon--image" aria-hidden="true">
-              <img src="/catalystcore/assets/products-logo/PDF&Image-Toolkit-Icon.png" alt="" />
+              <img src="/assets/products-logo/pdf-image-toolkit-icon.png" alt="" />
             </div>
             <span class="app-card__tag">Utilities · Offline</span>
             <h3>PDF &amp; Image Toolkit</h3>
@@ -145,9 +145,9 @@
               collection of useful everyday utilities.
             </p>
             <div class="app-card__actions">
-              <a class="btn btn--secondary btn--small" href="apps/pdf-image-toolkit/index.html">About</a>
-              <a class="btn btn--secondary btn--small" href="apps/pdf-image-toolkit/privacy.html">Privacy Policy</a>
-              <a class="btn btn--secondary btn--small" href="apps/terms.html">Terms</a>
+              <a class="btn btn--secondary btn--small" href="/apps/pdf-image-toolkit/">About</a>
+              <a class="btn btn--secondary btn--small" href="/apps/pdf-image-toolkit/privacy.html">Privacy Policy</a>
+              <a class="btn btn--secondary btn--small" href="/apps/terms.html">Terms</a>
             </div>
           </article>
 
@@ -161,14 +161,14 @@
     <div class="container footer__inner">
       <p class="footer__copy">© 2026 CatalystCore Studios</p>
       <nav class="footer__links" aria-label="Footer">
-        <a href="apps/index.html">Apps</a>
-        <a href="apps/privacy.html">Privacy Policy</a>
-        <a href="apps/terms.html">Terms</a>
-        <a href="about.html#contact">Contact</a>
+        <a href="/apps/">Apps</a>
+        <a href="/apps/privacy.html">Privacy Policy</a>
+        <a href="/apps/terms.html">Terms</a>
+        <a href="/about.html#contact">Contact</a>
       </nav>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 </html>
