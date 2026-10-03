@@ -1526,7 +1526,7 @@ article.app-card:focus-within .app-card__icon::after {
   object-fit: contain;
 }
 
-.app-hero__visual img[src*="Pdf&image"] {
+.app-hero__visual img[src*="pdf-image-toolkit-icon"] {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
 }
 
