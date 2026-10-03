@@ -1,0 +1,114 @@
+2. CatalystCore Studios — Terms & Conditions
+This should be a separate document.
+Terms & Conditions
+Effective Date: 02 October 2026
+Last Updated: 02 October 2026
+These Terms & Conditions ("Terms") govern your access to and use of applications, websites, software, and digital services provided by CatalystCore Studios ("CatalystCore", "we", "us", or "our").
+By accessing or using a CatalystCore product, you agree to these Terms.
+If you do not agree with these Terms, do not use the applicable product.
+1. Our Products
+CatalystCore Studios develops and provides software products and digital services.
+Different products may have different:
+- features
+- requirements
+- pricing
+- availability
+- supported platforms
+- limitations
+- product-specific rules
+Additional terms may apply to particular products or features.
+2. Eligibility
+You may use our products only when permitted by applicable law and the rules of the platform through which the product is distributed.
+If you are under the applicable age of consent or digital-service age in your jurisdiction, you may need permission from a parent or legal guardian.
+Certain products may have additional age requirements.
+3. License to Use Our Products
+Subject to these Terms, CatalystCore grants you a limited, non-exclusive, non-transferable, revocable license to use the applicable product for its intended purpose.
+You do not acquire ownership of the software itself.
+4. Intellectual Property
+Unless otherwise stated:
+- CatalystCore owns or licenses the application software.
+- CatalystCore owns or licenses its branding, logos, graphics, interfaces and original content.
+- You retain ownership of content and files that you provide to our products.
+You may not copy, modify, distribute, reverse engineer, decompile, sell, sublicense, or commercially exploit CatalystCore software except where permitted by applicable law or with our written permission.
+5. User Content
+You retain ownership of files, documents, images, text, and other content that you provide to a CatalystCore product.
+You are responsible for ensuring that you have the legal right to use and process that content.
+You grant CatalystCore only the permissions reasonably necessary to process your content and provide the requested functionality.
+For example, if you upload a document for conversion, we may process that document to perform the requested conversion.
+6. Prohibited Use
+You must not use CatalystCore products to:
+- violate applicable law
+- infringe intellectual-property rights
+- distribute malware
+- attack or disrupt our systems
+- attempt unauthorized access
+- abuse APIs or infrastructure
+- interfere with other users
+- reverse engineer protected software where prohibited
+- use our products for fraudulent activities
+- circumvent purchase, subscription, usage or technical restrictions
+We may restrict or terminate access where necessary to protect our services, users, or infrastructure.
+7. Free and Premium Features
+Some products may contain:
+- free features
+- premium features
+- subscriptions
+- one-time purchases
+- usage limits
+- credits
+- advertisements
+- rewarded advertisements
+- promotional offers
+Features and pricing may change over time.
+A purchase grants access to the applicable digital functionality according to the terms displayed at the time of purchase.
+8. Subscriptions
+Where subscriptions are offered:
+- subscription pricing will be displayed before purchase;
+- billing may be handled by the relevant app store;
+- subscription renewal and cancellation are subject to the applicable store's billing rules;
+- deleting an application does not necessarily cancel a subscription.
+For Google Play purchases, users should manage subscriptions through their Google Play account.
+9. Advertisements
+Some CatalystCore products may contain advertisements.
+Advertisements may be provided by third-party advertising networks.
+CatalystCore does not necessarily endorse the products or services displayed in third-party advertisements.
+10. Third-Party Services
+Our products may integrate with third-party services.
+We are not responsible for the independent operation, availability, policies, or content of third-party services.
+Your use of those services may be governed by their own terms and privacy policies.
+11. Availability
+We aim to provide reliable products, but we do not guarantee that:
+- a product will always be available;
+- every feature will always work;
+- the service will be uninterrupted;
+- the service will be compatible with every device;
+- bugs or errors will never occur.
+We may modify, suspend, discontinue, or restrict a product or feature where reasonably necessary.
+12. Updates
+We may release updates, patches, security fixes, feature changes, or compatibility changes.
+Some updates may be necessary to continue using a product.
+You are responsible for maintaining a compatible version of the application where reasonably necessary.
+13. User Data
+Our handling of personal information is governed by our Privacy Policy.
+By using CatalystCore products, you acknowledge that information may be processed as described in the applicable Privacy Policy and product-specific notices.
+14. Disclaimer
+To the maximum extent permitted by applicable law, CatalystCore products are provided on an "as available" and "as is" basis.
+We do not guarantee that a product will meet every individual requirement or be completely error-free.
+Certain jurisdictions do not permit some limitations of warranties, so some portions of this section may not apply to you.
+15. Limitation of Liability
+To the maximum extent permitted by applicable law, CatalystCore Studios and its developers, contributors, affiliates, and service providers will not be responsible for indirect, incidental, consequential, special, or punitive damages arising from your use of a CatalystCore product.
+Nothing in these Terms excludes liability that cannot legally be excluded under applicable law.
+16. Indemnification
+To the extent permitted by applicable law, you agree to be responsible for claims, losses, liabilities, and reasonable expenses arising from your unlawful use of CatalystCore products, violation of these Terms, or infringement of another person's rights.
+17. Suspension and Termination
+We may suspend or terminate access to a product where reasonably necessary, including where:
+- these Terms are violated;
+- the service is abused;
+- fraudulent activity is suspected;
+- security is threatened;
+- required by law.
+Where appropriate, users may stop using the product at any time.
+18. Changes to These Terms
+We may update these Terms as our products evolve.
+The latest version will be published on our website with an updated Last Updated date.
+Continued use of a product after applicable changes become effective constitutes acceptance of the updated Terms to the extent permitted by law.
