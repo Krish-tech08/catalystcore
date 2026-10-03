@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms &amp; Conditions | CatalystCore Studios</title>
+  <meta name="description" content="Terms & Conditions governing access to and use of applications, websites, software, and digital services provided by CatalystCore Studios." />
+  <meta property="og:title" content="Terms &amp; Conditions | CatalystCore Studios" />
+  <meta property="og:description" content="Terms & Conditions governing access to and use of CatalystCore Studios products and services." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.github.io/catalystcore-studios/apps/terms.html" />
+  <link rel="canonical" href="https://example.github.io/catalystcore-studios/apps/terms.html" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .terms-page {
+      min-height: 70vh;
+      padding: clamp(42px, 7vw, 76px) 0 clamp(56px, 8vw, 88px);
+    }
+
+    .terms-document {
+      width: min(100%, 790px);
+      margin: 0 auto;
+      color: var(--color-text-secondary);
+      font-size: 1rem;
+      line-height: 1.78;
+      overflow-wrap: anywhere;
+    }
+
+    .terms-document h1,
+    .terms-document h2,
+    .terms-document p,
+    .terms-document ul {
+      margin-top: 0;
+    }
+
+    .terms-document__source-title {
+      margin-bottom: 6px;
+      color: var(--color-text-muted);
+      font-size: 0.88rem;
+    }
+
+    .terms-document__source-note {
+      margin-bottom: 24px;
+      color: var(--color-text-muted);
+      font-size: 0.92rem;
+    }
+
+    .terms-document__title {
+      position: relative;
+      max-width: 18ch;
+      margin-bottom: 20px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid rgba(15, 163, 110, 0.28);
+      color: var(--color-text);
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      font-weight: 800;
+      line-height: 1.04;
+    }
+
+    .terms-document__title::after {
+      position: absolute;
+      right: 0;
+      bottom: -1px;
+      left: 0;
+      width: 22%;
+      height: 2px;
+      background: linear-gradient(
+        90deg,
+        rgba(15, 163, 110, 0.55),
+        var(--color-emerald) 16%,
+        var(--color-emerald) 84%,
+        rgba(15, 163, 110, 0.55)
+      );
+      box-shadow: 0 0 5px rgba(15, 163, 110, 0.32), 0 0 10px rgba(15, 163, 110, 0.14);
+      content: "";
+      animation: terms-loading-line 3.2s ease-in-out infinite alternate;
+    }
+
+    @keyframes terms-loading-line {
+      from { transform: translateX(0); }
+      to { transform: translateX(355%); }
+    }
+
+    .terms-document__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .terms-document__date {
+      margin: 0;
+      padding: 8px 12px;
+      border: 1px solid var(--color-border);
+      border-left: 2px solid var(--color-gold);
+      border-radius: var(--radius-sm);
+      background: var(--color-surface);
+      color: var(--color-text-secondary);
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      line-height: 1.5;
+    }
+
+    .terms-document__section {
+      margin-top: 34px;
+      padding-top: 26px;
+      border-top: 1px solid var(--color-border);
+    }
+
+    .terms-document__section > h2 {
+      margin-bottom: 18px;
+      padding-left: 12px;
+      border-left: 2px solid var(--color-emerald);
+      color: var(--color-text);
+      font-size: clamp(1.3rem, 2.6vw, 1.65rem);
+      line-height: 1.3;
+    }
+
+    .terms-document p {
+      margin-bottom: 15px;
+    }
+
+    .terms-document ul {
+      margin-bottom: 18px;
+      padding-left: 26px;
+      list-style: none;
+    }
+
+    .terms-document li {
+      position: relative;
+      margin: 7px 0;
+      padding-left: 12px;
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+    }
+
+    .terms-document li::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: var(--color-emerald);
+      content: "•";
+    }
+
+    .terms-document a {
+      color: var(--color-gold-hover);
+      text-decoration: underline;
+      text-decoration-color: rgba(226, 191, 77, 0.45);
+      text-underline-offset: 3px;
+    }
+
+    .terms-document a:hover {
+      color: var(--color-text);
+    }
+
+    .terms-document a:focus-visible {
+      outline: 2px solid var(--color-emerald);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .terms-document__title::after {
+        width: 100%;
+        animation: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .terms-page {
+        padding-top: 38px;
+      }
+
+      .terms-document {
+        font-size: 0.96rem;
+        line-height: 1.72;
+      }
+
+      .terms-document__section {
+        margin-top: 28px;
+        padding-top: 22px;
+      }
+
+      .terms-document__meta {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 8px;
+      }
+
+      .terms-document__date {
+        overflow-wrap: anywhere;
+      }
+
+      .terms-document ul {
+        padding-left: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">
+          <img src="/catalystcore/assets/Hero logo bg remove v2.png" alt="" />
+        </span>
+        CatalystCore Studios
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Apps</a>
+        <a href="../about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="terms-page">
+    <div class="container">
+      <article class="terms-document" aria-labelledby="terms-heading">
+        <!-- <p class="terms-document__source-title">2. CatalystCore Studios — Terms &amp; Conditions</p> -->
+        <!-- <p class="terms-document__source-note">This should be a separate document.</p> -->
+        <h1 id="terms-heading" class="terms-document__title">Terms &amp; Conditions</h1>
+        <div class="terms-document__meta">
+          <p class="terms-document__date">Effective Date: 02 October 2026</p>
+          <p class="terms-document__date">Last Updated: 02 October 2026</p>
+        </div>
+        <p>These Terms &amp; Conditions ("Terms") govern your access to and use of applications, websites, software, and digital services provided by CatalystCore Studios ("CatalystCore", "we", "us", or "our").</p>
+        <p>By accessing or using a CatalystCore product, you agree to these Terms.</p>
+        <p>If you do not agree with these Terms, do not use the applicable product.</p>
+
+        <section class="terms-document__section">
+          <h2>1. Our Products</h2>
+          <p>CatalystCore Studios develops and provides software products and digital services.</p>
+          <p>Different products may have different:</p>
+          <ul>
+            <li>features</li>
+            <li>requirements</li>
+            <li>pricing</li>
+            <li>availability</li>
+            <li>supported platforms</li>
+            <li>limitations</li>
+            <li>product-specific rules</li>
+          </ul>
+          <p>Additional terms may apply to particular products or features.</p>
+        </section>
+
+        <section class="terms-document__section">
+          <h2>2. Eligibility</h2>
+          <p>You may use our products only when permitted by applicable law and the rules of the platform through which the product is distributed.</p>
+          <p>If you are under the applicable age of consent or digital-service age in your jurisdiction, you may need permission from a parent or legal guardian.</p>
+          <p>Certain products may have additional age requirements.</p>
+        </section>
+
+        <section class="terms-document__section">
+          <h2>3. License to Use Our Products</h2>
+          <p>Subject to these Terms, CatalystCore grants you a limited, non-exclusive, non-transferable, revocable license to use the applicable product for its intended purpose.</p>
+          <p>You do not acquire ownership of the software itself.</p>
+        </section>
+
+        <section class="terms-document__section">
+          <h2>4. Intellectual Property</h2>
+          <p>Unless otherwise stated:</p>
+          <ul>
+            <li>CatalystCore owns or licenses the application software.</li>
+            <li>CatalystCore owns or licenses its branding, logos, graphics, interfaces and original content.</li>
+            <li>You retain ownership of content and files that you provide to our products.</li>
+          </ul>
+          <p>You may not copy, modify, distribute, reverse engineer, decompile, sell, sublicense, or commercially exploit CatalystCore software except where permitted by applicable law or with our written permission.</p>
+        </section>
+
+        <section class="terms-document__section">
+          <h2>5. User Content</h2>
+          <p>You retain ownership of files, documents, images, text, and other content that you provide to a CatalystCore product.</p>
+          <p>You are responsible for ensuring that you have the legal right to use and process that content.</p>
+          <p>You grant CatalystCore only the permissions reasonably necessary to process your content and provide the requested functionality.</p>
+          <p>For example, if you upload a document for conversion, we may process that document to perform the requested conversion.</p>
+        </section>
+
+        <section class="terms-document__section">
+          <h2>6. Prohibited Use</h2>
+          <p>You must not use CatalystCore products to:</p>
+          <ul>
+            <li>violate applicable law</li>
+            <li>infringe intellectual-property rights</li>
+            <li>distribute malware</li>
+            <li>attack or disrupt our systems</li>
+            <li>attempt unauthorized access</li>
+            <li>abuse APIs or infrastructure</li>
+            <li>interfere with other users</li>
+            <li>reverse engineer protected software where prohibited</li>
+            <li>use our products for fraudulent activities</li>
+            <li>circumvent purchase, subscription, usage or technical restrictions</li>
+          </ul>
+          <p>We may restrict or terminate access where necessary to protect our services, users, or infrastructure.</p>
+        </section>
+
+        <section class="terms-document__section">
+          <h2>7. Free and Premium Features</h2>
+          <p>Some products may contain:</p>
+          <ul>
+            <li>free features</li>
+            <li>premium features</li>
+            <li>subscriptions</li>
+            <li>one-time purchases</li>
+            <li>usage limits</li>
+            <li>credits</li>
+            <li>advertisements</li>
+            <li>rewarded advertisements</li>
+            <li>promotional offers</li>
+          </ul>
+          <p>Features and pricing may change over time.</p>
+          <p>A purchase grants access to the applicable digital functionality according to the terms displayed at the time of purchase.</p>
+        </section>
+
+        <section class="terms-document__section">
+          <h2>8. Subscriptions</h2>
+          <p>Where subscriptions are offered:</p>
+          <ul>
+            <li>subscription pricing will be displayed before purchase;</li>
+            <li>billing may be handled by the relevant app store;</li>
+            <li>subscription renewal and cancellation are subject to the applicable store's billing rules;</li>
+            <li>deleting an application does not necessarily cancel a subscription.</li>
+          </ul>
+          <p>For Google Play purchases, users should manage subscriptions through their Google Play account.</p>
+        </section>
+
+        <section class="terms-document__section">
+          <h2>9. Advertisements</h2>
+          <p>Some CatalystCore products may contain advertisements.</p>
+          <p>Advertisements may be provided by third-party advertising networks.</p>
+          <p>CatalystCore does not necessarily endorse the products or services displayed in third-party advertisements.</p>
+        </section>
+
+        <section class="terms-document__section">
+          <h2>10. Third-Party Services</h2>
+          <p>Our products may integrate with third-party services.</p>
+          <p>We are not responsible for the independent operation, availability, policies, or content of third-party services.</p>
+          <p>Your use of those services may be governed by their own terms and privacy policies.</p>
+        </section>
+
+        <section class="terms-document__section">
+          <h2>11. Availability</h2>
+          <p>We aim to provide reliable products, but we do not guarantee that:</p>
+          <ul>
+            <li>a product will always be available;</li>
+            <li>every feature will always work;</li>
+            <li>the service will be uninterrupted;</li>
+            <li>the service will be compatible with every device;</li>
+            <li>bugs or errors will never occur.</li>
+          </ul>
+          <p>We may modify, suspend, discontinue, or restrict a product or feature where reasonably necessary.</p>
+        </section>
+
+        <section class="terms-document__section">
+          <h2>12. Updates</h2>
+          <p>We may release updates, patches, security fixes, feature changes, or compatibility changes.</p>
+          <p>Some updates may be necessary to continue using a product.</p>
+          <p>You are responsible for maintaining a compatible version of the application where reasonably necessary.</p>
+        </section>
+
+        <section class="terms-document__section">
+          <h2>13. User Data</h2>
+          <p>Our handling of personal information is governed by our <a href="privacy.html">Privacy Policy</a>.</p>
+          <p>By using CatalystCore products, you acknowledge that information may be processed as described in the applicable Privacy Policy and product-specific notices.</p>
+        </section>
+
+        <section class="terms-document__section">
+          <h2>14. Disclaimer</h2>
+          <p>To the maximum extent permitted by applicable law, CatalystCore products are provided on an "as available" and "as is" basis.</p>
+          <p>We do not guarantee that a product will meet every individual requirement or be completely error-free.</p>
+          <p>Certain jurisdictions do not permit some limitations of warranties, so some portions of this section may not apply to you.</p>
+        </section>
+
+        <section class="terms-document__section">
+          <h2>15. Limitation of Liability</h2>
+          <p>To the maximum extent permitted by applicable law, CatalystCore Studios and its developers, contributors, affiliates, and service providers will not be responsible for indirect, incidental, consequential, special, or punitive damages arising from your use of a CatalystCore product.</p>
+          <p>Nothing in these Terms excludes liability that cannot legally be excluded under applicable law.</p>
+        </section>
+
+        <section class="terms-document__section">
+          <h2>16. Indemnification</h2>
+          <p>To the extent permitted by applicable law, you agree to be responsible for claims, losses, liabilities, and reasonable expenses arising from your unlawful use of CatalystCore products, violation of these Terms, or infringement of another person's rights.</p>
+        </section>
+
+        <section class="terms-document__section">
+          <h2>17. Suspension and Termination</h2>
+          <p>We may suspend or terminate access to a product where reasonably necessary, including where:</p>
+          <ul>
+            <li>these Terms are violated;</li>
+            <li>the service is abused;</li>
+            <li>fraudulent activity is suspected;</li>
+            <li>security is threatened;</li>
+            <li>required by law.</li>
+          </ul>
+          <p>Where appropriate, users may stop using the product at any time.</p>
+        </section>
+
+        <section class="terms-document__section">
+          <h2>18. Changes to These Terms</h2>
+          <p>We may update these Terms as our products evolve.</p>
+          <p>The latest version will be published on our website with an updated Last Updated date.</p>
+          <p>Continued use of a product after applicable changes become effective constitutes acceptance of the updated Terms to the extent permitted by law.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© 2026 CatalystCore Studios</p>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="index.html">Apps</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html" aria-current="page">Terms &amp; Conditions</a>
+        <a href="../about.html#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
