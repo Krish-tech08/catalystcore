@@ -26,6 +26,86 @@ document.addEventListener("DOMContentLoaded", function () {
     "(prefers-reduced-motion: reduce)"
   ).matches;
 
+  var statsRail = document.querySelector(".studio-stats__rail");
+
+  if (statsRail) {
+    var gauges = Array.from(statsRail.querySelectorAll(".studio-stat")).map(function (stat) {
+      return {
+        target: Number(stat.dataset.target),
+        minDigits: Number(stat.dataset.minDigits) || 0,
+        value: stat.querySelector(".studio-stat__value"),
+        arc: stat.querySelector(".studio-stat__arc"),
+        trail: stat.querySelector(".studio-stat__trail"),
+        indicator: stat.querySelector(".studio-stat__indicator")
+      };
+    });
+
+    function formatStatValue(gauge) {
+      return String(gauge.target).padStart(gauge.minDigits, "0");
+    }
+
+    function setGaugeProgress(gauge, progress) {
+      gauge.arc.style.strokeDashoffset = String(100 - progress);
+      gauge.trail.style.strokeDashoffset = String(9 - progress);
+
+      var point = gauge.arc.getPointAtLength(
+        gauge.arc.getTotalLength() * progress / 100
+      );
+      gauge.indicator.setAttribute("cx", point.x);
+      gauge.indicator.setAttribute("cy", point.y);
+      gauge.indicator.style.opacity = progress > 0 ? "1" : "0";
+    }
+
+    function showFinalStats() {
+      gauges.forEach(function (gauge) {
+        gauge.value.textContent = formatStatValue(gauge);
+        setGaugeProgress(gauge, 100);
+      });
+    }
+
+    if (prefersReducedMotion || !("IntersectionObserver" in window)) {
+      showFinalStats();
+    } else {
+      gauges.forEach(function (gauge) {
+        gauge.value.textContent = "0";
+        setGaugeProgress(gauge, 0);
+      });
+
+      var statsObserver = new IntersectionObserver(function (entries) {
+        if (entries.some(function (entry) { return entry.isIntersecting; })) {
+          statsObserver.disconnect();
+          var startTime = null;
+          var duration = 1800;
+
+          function animateStats(timestamp) {
+            if (startTime === null) startTime = timestamp;
+            var linearProgress = Math.min((timestamp - startTime) / duration, 1);
+            var easedProgress = 1 - Math.pow(1 - linearProgress, 3);
+
+            gauges.forEach(function (gauge) {
+              var progress = easedProgress * 100;
+              gauge.value.textContent = String(Math.round(gauge.target * easedProgress));
+              setGaugeProgress(gauge, progress);
+            });
+
+            if (linearProgress < 1) {
+              window.requestAnimationFrame(animateStats);
+            } else {
+              gauges.forEach(function (gauge) {
+                gauge.value.textContent = formatStatValue(gauge);
+                setGaugeProgress(gauge, 100);
+              });
+            }
+          }
+
+          window.requestAnimationFrame(animateStats);
+        }
+      }, { threshold: 0.2 });
+
+      statsObserver.observe(statsRail);
+    }
+  }
+
   var hero = document.querySelector(".hero");
   var dotField = document.querySelector(".hero-dot-field");
   var hasFinePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;

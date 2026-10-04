@@ -92,6 +92,55 @@
       </div>
     </section>
 
+    <section class="section section--tight section--band studio-stats" aria-labelledby="studio-stats-title">
+      <div class="container">
+        <div class="section-heading studio-stats__heading">
+          <h2 id="studio-stats-title">Studio Stats</h2>
+        </div>
+
+        <div class="studio-stats__rail" role="group" aria-label="CatalystCore studio statistics">
+          <div class="studio-stat" data-target="3" data-min-digits="2">
+            <svg class="studio-stat__gauge" viewBox="0 0 200 112" aria-hidden="true">
+              <path class="studio-stat__track" d="M 16 96 A 84 84 0 0 1 184 96" pathLength="100" />
+              <path class="studio-stat__trail" d="M 16 96 A 84 84 0 0 1 184 96" pathLength="100" />
+              <path class="studio-stat__arc" d="M 16 96 A 84 84 0 0 1 184 96" pathLength="100" />
+              <circle class="studio-stat__indicator" cx="16" cy="96" r="3.2" />
+            </svg>
+            <div class="studio-stat__reading">
+              <p class="studio-stat__number"><span class="studio-stat__value">03</span></p>
+              <p class="studio-stat__label">Apps</p>
+            </div>
+          </div>
+
+          <div class="studio-stat" data-target="300">
+            <svg class="studio-stat__gauge" viewBox="0 0 200 112" aria-hidden="true">
+              <path class="studio-stat__track" d="M 16 96 A 84 84 0 0 1 184 96" pathLength="100" />
+              <path class="studio-stat__trail" d="M 16 96 A 84 84 0 0 1 184 96" pathLength="100" />
+              <path class="studio-stat__arc" d="M 16 96 A 84 84 0 0 1 184 96" pathLength="100" />
+              <circle class="studio-stat__indicator" cx="16" cy="96" r="3.2" />
+            </svg>
+            <div class="studio-stat__reading">
+              <p class="studio-stat__number"><span class="studio-stat__value">300</span><span class="studio-stat__suffix">+</span></p>
+              <p class="studio-stat__label">Total Users</p>
+            </div>
+          </div>
+
+          <div class="studio-stat" data-target="100">
+            <svg class="studio-stat__gauge" viewBox="0 0 200 112" aria-hidden="true">
+              <path class="studio-stat__track" d="M 16 96 A 84 84 0 0 1 184 96" pathLength="100" />
+              <path class="studio-stat__trail" d="M 16 96 A 84 84 0 0 1 184 96" pathLength="100" />
+              <path class="studio-stat__arc" d="M 16 96 A 84 84 0 0 1 184 96" pathLength="100" />
+              <circle class="studio-stat__indicator" cx="16" cy="96" r="3.2" />
+            </svg>
+            <div class="studio-stat__reading">
+              <p class="studio-stat__number"><span class="studio-stat__value">100</span><span class="studio-stat__suffix">+</span></p>
+              <p class="studio-stat__label">Monthly Active Users</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="apps">
       <div class="container">
         <div class="section-heading">
@@ -114,15 +163,27 @@
             <span class="app-card__tag">Productivity · RPG</span>
             <h3>Grind Quest</h3>
             <p class="app-card__tagline">Level Up In Life</p>
+            <p class="app-card__rating" aria-label="Rating: 4.8"><span class="app-card__rating-star" aria-hidden="true">★</span> 4.8</p>
             <p>
               A real-life RPG productivity app that turns your goals and
               daily tasks into quests. Complete quests, earn XP, level up,
               and keep progressing.
             </p>
             <div class="app-card__actions">
-              <a class="btn btn--secondary btn--small" href="/apps/grind-quest/">About</a>
-              <a class="btn btn--secondary btn--small" href="/apps/grind-quest/privacy.html">Privacy Policy</a>
-              <a class="btn btn--secondary btn--small" href="/apps/terms.html">Terms</a>
+              <a
+                class="btn btn--primary btn--small btn--google-play"
+                href="https://play.google.com/store/apps/details?id=com.catalystcore.grindquest"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path fill="#4285F4" d="M3 2.6v18.8L12.4 12 3 2.6Z" />
+                  <path fill="#34A853" d="m4 2 11.5 6.8-3.4 3.2L4 2Z" />
+                  <path fill="#FBBC04" d="m15.5 8.8 5 2.9c.8.5.8 1.1 0 1.6l-5 2.9-3.9-4 3.9-3.4Z" />
+                  <path fill="#EA4335" d="M4 22 15.5 15.2l-3.4-3.2L4 22Z" />
+                </svg>
+                Get on Google Play
+              </a>
             </div>
           </article>
 
@@ -140,14 +201,26 @@
             <span class="app-card__tag">Utilities · Offline</span>
             <h3>PDF &amp; Image Toolkit</h3>
             <p class="app-card__tagline">Everyday Document Utilities</p>
+            <p class="app-card__rating" aria-label="Rating: 4.9"><span class="app-card__rating-star" aria-hidden="true">★</span> 4.9</p>
             <p>
               A practical toolkit for working with PDFs and images through a
               collection of useful everyday utilities.
             </p>
             <div class="app-card__actions">
-              <a class="btn btn--secondary btn--small" href="/apps/pdf-image-toolkit/">About</a>
-              <a class="btn btn--secondary btn--small" href="/apps/pdf-image-toolkit/privacy.html">Privacy Policy</a>
-              <a class="btn btn--secondary btn--small" href="/apps/terms.html">Terms</a>
+              <a
+                class="btn btn--primary btn--small btn--google-play"
+                href="https://play.google.com/store/apps/details?id=com.catlystcore.pdfandimagetoolkit"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path fill="#4285F4" d="M3 2.6v18.8L12.4 12 3 2.6Z" />
+                  <path fill="#34A853" d="m4 2 11.5 6.8-3.4 3.2L4 2Z" />
+                  <path fill="#FBBC04" d="m15.5 8.8 5 2.9c.8.5.8 1.1 0 1.6l-5 2.9-3.9-4 3.9-3.4Z" />
+                  <path fill="#EA4335" d="M4 22 15.5 15.2l-3.4-3.2L4 22Z" />
+                </svg>
+                Get on Google Play
+              </a>
             </div>
           </article>
 
